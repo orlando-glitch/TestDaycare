@@ -1,0 +1,126 @@
+---
+title: "Enroll in Daycare in Lakewood, WA | Just Like Home Daycare"
+description: "Ready to enroll? Just Like Home Daycare in Lakewood, WA makes it easy, tour, choose your program, complete forms & start. DSHS, Tribal & military subsidies accepted."
+preloadImg: ""
+permalink: 'enrollment/'
+eleventyNavigation:
+    key: Enrollment Process
+    order: 301
+    parent: Administration
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/administration.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("How to Enroll in Lakewood, WA", "Just Like Home Daycare Center")}}
+
+    <!-- ============================================ -->
+    <!--               enrollment-steps               -->
+    <!-- ============================================ -->
+    <section class="cs-section section-sbs enrollment-steps">
+        <div class="cs-container animate">
+            <span class="cs-topper">Enrollment Steps</span>
+            <h2 class="cs-title">Our Enrollment Process</h2>
+            <p class="cs-text">Enrolling at Just Like Home Daycare Center is designed to be simple, clear, and stress-free. Whether you are enrolling an infant, preschooler, or school-age child, and whether you pay privately or through subsidy, our team guides you from start to finish.</p>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <h3 class="cs-h3">Step 1: Schedule a Tour</h3>
+                    <p class="cs-text">Visit one of our four Lakewood campuses to meet our team, see classrooms, and ask questions. <a href="/schedule-a-tour/">Schedule your tour here</a>.</p>
+                </article>
+
+                <article class="step-card">
+                    <h3 class="cs-h3">Step 2: Make Your Enrollment Decision</h3>
+                    <p class="cs-text">After your tour, let us know when you are ready. Our team is available for follow-up questions by phone or email.</p>
+                </article>
+
+                <article class="step-card">
+                    <h3 class="cs-h3">Step 3: Complete the Payment Process</h3>
+                    <ul class="cs-list">
+                        <li class="cs-li"><a class="text-link" href="/financial-assistance/#dshs-child-care-assistance">DSHS</a> / <a class="text-link" href="/financial-assistance/#wccc-assistance">WCCC</a>: Call DSHS with our provider number to start authorization.</li>
+                        <li class="cs-li"><a class="text-link" href="/financial-assistance/#military-child-care-aware">Military Childcare Aware</a>: Complete CCA forms and obtain your cost verification form.</li>
+                        <li class="cs-li"><a class="text-link" href="/financial-assistance/#tribal-child-care-assistance">Tribal Subsidy</a>: Contact your tribal program for authorization.</li>
+                        <li class="cs-li">Private Pay: Submit deposit after approval to hold your child's spot.</li>
+                    </ul>
+                </article>
+
+                <article class="step-card">
+                    <h3 class="cs-h3">Step 4: Complete Your Enrollment Packet</h3>
+                    <p class="cs-text">We provide all required forms for health history, emergency contacts, authorized pickups, program agreements, and DCYF-required documentation.</p>
+                </article>
+
+                <article class="step-card">
+                    <h3 class="cs-h3">Step 5: Submit Your Completed Packet</h3>
+                    <p class="cs-text">Return your completed packet and supporting documents to your chosen campus. We review and confirm all details.</p>
+                </article>
+
+                <article class="step-card">
+                    <h3 class="cs-h3">Step 6: Arrange Your Start Date</h3>
+                    <p class="cs-text">After packet approval, we finalize your start date, classroom placement, and teacher introduction for a smooth first day.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               faqs               -->
+    <!-- ============================================ -->
+    <script defer src="/assets/js/faq.js"></script>
+    <section id="faq" class="cs-section enrollment-faq">
+        <img class="cs-rocket float-invert" decoding="async" src="/assets/svgs/rocket-gray.svg" alt="rocket" width="645" height="645">
+        <div class="cs-container animate">
+            <span class="cs-topper">FAQs</span>
+            <h2 class="cs-title">Enrollment Frequently Asked Questions</h2>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item active">
+                    <button class="cs-button" type="button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">Do you accept DSHS child care subsidies?</span>
+                    </button>
+                    <p class="cs-item-p">Yes. We accept WCCC through DSHS, Tribal subsidy, and Military Childcare Aware. Over 98% of our enrolled families receive financial assistance.</p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button" type="button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">What documents are needed for enrollment?</span>
+                    </button>
+                    <p class="cs-item-p">You typically need immunization records, completed enrollment packet forms, and subsidy authorization or private-pay confirmation.</p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button" type="button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">How long does enrollment take?</span>
+                    </button>
+                    <p class="cs-item-p">Timelines vary by payment method. Private pay can often be completed quickly, while subsidy authorization may take a few days.</p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button" type="button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">Can I tour more than one location?</span>
+                    </button>
+                    <p class="cs-item-p">Absolutely. We encourage visiting multiple campuses, especially for families with siblings.</p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button" type="button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">How do I check availability?</span>
+                    </button>
+                    <p class="cs-item-p">Availability varies by age group and campus. Contact us at <a href="tel:+12533023904">(253) 302-3904</a> for current openings.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    {{cta("Ready to Get Started? We Make Enrollment Easy.", "Schedule a tour today and take the first step toward finding your child a place that truly feels like home.", "Schedule a Tour", "/schedule-a-tour/", "Contact Us", "/contact-us/")}}
+
+{% endblock %}

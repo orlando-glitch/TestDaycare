@@ -1,0 +1,191 @@
+---
+title: "Play-Based Curriculum & Philosophy | Just Like Home Lakewood"
+description: "Just Like Home Daycare uses Creative Curriculum & play-based learning to prepare children for kindergarten in Lakewood, WA. Bilingual, Early Achievers certified."
+preloadImg: ""
+permalink: 'about/curriculum/'
+eleventyNavigation:
+    key: Curriculum
+    order: 302
+    parent: About Us
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Play-Based Learning in Lakewood, WA", "Our Curriculum & Philosophy")}}
+
+    <!-- ============================================ -->
+    <!--               curriculum-overview               -->
+    <!-- ============================================ -->
+    <section class="cs-section section-details">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Curriculum Overview</span>
+                <h2 class="cs-title">A Curriculum That Puts Children First</h2>
+                <p class="cs-text">At Just Like Home Daycare Center, we believe the first five years are the most important years of a child's life. Our curriculum is built on the Creative Curriculum framework and enriched with play-based exploration, bilingual experiences, and social-emotional learning that develops the whole child.</p>
+                <p class="cs-text">The result is a learning environment where children are engaged, developmentally supported, and joyfully growing every day.</p>
+                <a href="/programs/infant-care/" class="button-solid">Explore Our Programs</a>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="Children working together on classroom drawing activities." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               how-we-teach               -->
+    <!-- ============================================ -->
+    <section class="cs-section section-highlights pb-12">
+        <div class="cs-container animate">
+            <span class="cs-topper">How We Teach</span>
+            <h2 class="cs-title">Learning Through Play, Connection, and Discovery</h2>
+            <p class="cs-text">Children learn best by doing, touching, building, experimenting, imagining, and working alongside caring adults. Our classrooms are designed to support this natural learning process through intentional play, teacher-guided activities, and rich daily routines.</p>
+            <div class="cs-card-group">
+                <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn and rocket" width="427" height="279">
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-pencil-ruler.svg" alt="" width="30" height="30">
+                    </span>
+                    <h3 class="cs-h3">Learning Through Play and Exploration</h3>
+                    <p class="cs-text">From sensory tables and building blocks to dramatic play and outdoor discovery, our classrooms are filled with materials that invite children to explore. Every play activity is chosen to build specific developmental skills.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-puzzle.svg" alt="" width="29" height="34">
+                    </span>
+                    <h3 class="cs-h3">Building Confidence and Independence</h3>
+                    <p class="cs-text">We guide children toward independence at every age, from infants learning to self-soothe to preschoolers making choices in learning centers. Small successes build confidence and readiness for new challenges.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-kindergarten.svg" alt="" width="38" height="31">
+                    </span>
+                    <h3 class="cs-h3">Early Skills for School and Life</h3>
+                    <p class="cs-text">Our program focuses on early literacy, number sense, self-regulation, listening, and cooperation. These are not only school-readiness skills, they are lifelong skills.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               framework               -->
+    <!-- ============================================ -->
+    <section class="cs-section section-sbs bg-secondary">
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Framework</span>
+                <h2 class="cs-title">Creative Curriculum: Research-Backed Learning for Every Child</h2>
+                <p class="cs-text">Creative Curriculum gives our teachers a clear, research-backed structure for planning intentional learning experiences across cognitive, social-emotional, physical, and language domains. Teachers use observation and documentation to ensure every child progresses at their own pace.</p>
+
+                <h3 class="cs-h3">Infants and Toddlers</h3>
+                <p class="cs-text">For our youngest learners, Creative Curriculum supports secure attachments, sensory awareness, and responsive caregiving that strengthens early brain development.</p>
+
+                <h3 class="cs-h3">Preschool and Pre-K</h3>
+                <p class="cs-text">In preschool classrooms, integrated thematic units blend literacy, math, science, and social studies into play-rich experiences that build kindergarten readiness naturally.</p>
+
+                <h3 class="cs-h3">Social-Emotional Learning with Love and Logic</h3>
+                <p class="cs-text">Alongside academic learning, we use Love and Logic strategies to support emotional growth, conflict resolution, and positive behavior in a respectful classroom culture.</p>
+            </div>
+            <div class="sbs-image">
+                <img class="cs-sun" decoding="async" src="/assets/images/sun.png" alt="sun" width="210" height="200">
+                <img class="cs-star" decoding="async" src="/assets/images/shooting-star.png" alt="star" width="274" height="193">
+                <picture class="cs-picture cs-picture-top">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-009.jpg' | resize({ width: 300, height: 300 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-009.jpg' | resize({ width: 300, height: 300 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-009.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-009.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" alt="Children exploring counting beads during guided learning." width="300" height="300" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-bottom">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-014.jpg' | resize({ width: 300, height: 342 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-014.jpg' | resize({ width: 300, height: 342 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-014.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-014.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" alt="Child using wooden animals during imaginative play." width="300" height="342" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-tall">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 300, height: 662 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 300, height: 662 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" alt="Child smiling during a positive classroom moment." width="300" height="662" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               bilingual-learning               -->
+    <!-- ============================================ -->
+    <section class="cs-section section-details pt-12">
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <span class="cs-topper">Bilingual Learning</span>
+                <h2 class="cs-title">A Bilingual Approach That Gives Children an Early Advantage</h2>
+                <p class="cs-text">Exposure to a second language early in life provides cognitive and social benefits. Our bilingual environment weaves language naturally into songs, stories, greetings, and daily conversations, while celebrating the diversity of our Lakewood community.</p>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="Diverse group of children engaged during circle time." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               early-achievers               -->
+    <!-- ============================================ -->
+    <section class="cs-section section-details pt-0 pb-0">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Early Achievers</span>
+                <h2 class="cs-title">Washington State Early Achievers Participant</h2>
+                <p class="cs-text">Just Like Home Daycare Center participates in Washington State's Early Achievers program, which holds providers to high standards for learning environment quality, curriculum implementation, and continuous professional development.</p>
+                <p class="cs-text">Our participation gives families trusted third-party assurance that our program meets or exceeds state expectations for early childhood care and education.</p>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="Children listening and participating during teacher-led reading." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    {{cta("See Our Curriculum in Action. Schedule a Tour", "Visit one of our Lakewood campuses and watch the learning happen firsthand.", "Schedule a Tour", "/schedule-a-tour/", "Contact Us", "/contact-us/")}}
+
+{% endblock %}

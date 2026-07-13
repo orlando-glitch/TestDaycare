@@ -1,0 +1,285 @@
+
+/*-- -------------------------- -->
+<---            Career FAQ         -->
+<--- -------------------------- -*/
+#career-faq{
+    position: relative;
+
+    .cs-container {
+        max-width: 1080px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;    
+        position: relative;
+    }
+
+    .cs-faq-group {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cs-faq-item {
+        list-style: none;
+        width: 100%;
+        // border-bottom: 1px solid #E8E8E8;
+        transition: border-bottom 0.3s;
+        // background-color: #fff;
+        // border-radius: 4px;
+        border-radius: 15px;
+        border: 1px solid rgba(0, 59, 123, 0.30);
+    }
+
+    .cs-faq-item:hover {
+        cursor: pointer;
+    }
+    .cs-faq-item.active {
+    /* border-color: var(--primaryOrange); */
+    }
+    .cs-faq-item.active .cs-button {
+    /* color: var(--primaryOrange); */
+    }
+    .cs-faq-item.active .cs-button:before {
+        background-color: var(--secondary);
+        transform: rotate(315deg);
+    }
+    .cs-faq-item.active .cs-button:after {
+        background-color: var(--secondary);
+        transform: rotate(-315deg);
+    }
+    .cs-faq-item.active .cs-item-p {
+        height: auto;
+        /* 20px - 24px bottom */
+        /* 16px - 24px left & right */
+        text-align: start;
+        padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
+        opacity: 1;
+    }
+    .cs-button {
+        font-size: 1rem;
+        line-height: 1.2em;
+        text-align: left;
+        font-weight: 600;
+        font-family: 'Quicksand', 'Trebuchet MS', sans-serif;
+        /* 16px - 20px */
+        padding: clamp(1rem, 1.3vw, 1.25rem);
+        border: none;
+        background: transparent;
+        color: var(--headingTextColor);
+        opacity: 1;
+        display: block;
+        width: 100%;
+        position: relative;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .cs-button:hover {
+        cursor: pointer;
+    }
+    .cs-button:before {
+        /* left line */
+        content: '';
+        width: 0.5rem;
+        height: 0.125rem;
+        background-color: var(--primary);
+        opacity: 1;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        top: 45%;
+        right: 1.5rem;
+        transform: rotate(45deg);
+        /* animate the transform from the left side of the x axis, and the center of the y */
+        transform-origin: left center;
+        transition: transform .5s;
+    }
+    .cs-button:after {
+        /* right line */
+        content: '';
+        width: 0.5rem;
+        height: 0.125rem;
+        background-color: var(--primary);
+        opacity: 1;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        top: 45%;
+        right: 1.3125rem;
+        transform: rotate(-45deg);
+        /* animate the transform from the right side of the x axis, and the center of the y */
+        transform-origin: right center;
+        transition: transform .5s;
+    }
+    .cs-button-text {
+        width: 90%;
+        display: block;
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+    }
+    .cs-item-p {
+        /* 14px - 16px */
+        /* font-size: clamp(0.875rem, 1.5vw, 1rem); */
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        line-height: 1.5em;
+        width: 90%;
+        height: 0;
+        margin: 0;
+        /* 16px - 24px */
+        padding: 0 clamp(1rem, 2vw, 1.5rem);
+        opacity: 0;
+        color: var(--bodyTextColor);
+        /* clips the text so it doesn't show up */
+        overflow: hidden;
+        transition: opacity 0.3s, padding-bottom 0.3s;
+        transition: opacity 0.5s, padding-bottom 0.5s;
+    }
+    .cs-link{
+        display: flex;
+        padding-top: 10px;
+        color: var(--secondary);
+        text-decoration: underline;
+    }
+    .cs-text{
+        color: var(--bodyTextColor);
+    }
+    .cs-list{
+        list-style-type: disc;
+        margin-left: 2rem;
+        margin-bottom: 1.3rem;
+    }
+    li{
+        color: var(--bodyTextColor);
+        font-size: clamp(14px, 1.8vw, 18px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #career-faq  {
+        .cs-title {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+/*-- -------------------------- -->
+<---         APPLY NOW          -->
+<--- -------------------------- -*/
+#apply {
+    z-index: 11;
+    animation: none;
+    .cs-title{
+        text-align: center;
+    }
+    .forms-cs-title {
+        font-size: clamp(2rem, 6vw, 3rem);
+        color: var(--headingText);
+    }
+
+    .forms-cs-h3 {
+        padding-bottom: 25px;
+        opacity: 0.8;
+        font-size: clamp(1rem, 1.5vw, 2rem);
+
+    }
+
+    .forms-form-wrapper, 
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distribute the space evenly in the container */
+        min-height: 100%; /* Force the container to at least full height */
+    }
+
+    .forms-form-wrapper {
+        background-color: #fff;
+        // box-shadow: 0 0 29px 0 rgb(0 0 0 / 9%);
+        border-radius: 5px;
+        // padding: 25px;
+        max-width: 1000px;
+        margin: auto; 
+    }
+
+    .forms-input {
+        color: var(--bodyText);
+        font-size: 16px;
+        margin-bottom: 16px;
+        opacity: 0.6;
+        width: 100%;
+        border: 1px solid #ccc;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .form-submit {
+        display: flex;
+        justify-content: end;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-row > div {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .input-row > div:last-child {
+        margin-bottom: 0;
+    }
+    .sub-title{
+        position: relative;
+        margin-bottom: 2rem;
+        &:after{
+            content: "";
+            border-bottom: 1px solid #000;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            bottom: -8px;
+        }
+    }
+    .input-file{
+        margin-bottom: 1rem;
+    }
+    .certification {
+        input {
+            margin-left: 20px;
+            margin-bottom: 1rem;
+        }
+    }
+    .button-solid{
+        border: none;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #apply{
+         .cs-container {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .input-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .input-row > div {
+            flex: 1;
+            margin-right: 10px;
+        }
+        
+        .input-row > div:last-child {
+            margin-right: 0;
+        }
+    }
+}

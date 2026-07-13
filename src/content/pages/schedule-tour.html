@@ -1,0 +1,49 @@
+---
+title: "Schedule a Daycare Tour in Lakewood, WA | Just Like Home"
+description: "Schedule a tour at Just Like Home Daycare Center in Lakewood, WA. See our 4 campuses, meet our team & ask every question. Open Mon to Fri 5:30 AM to midnight."
+preloadImg: ""
+permalink: 'schedule-a-tour/'
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Schedule a Tour", "Just Like Home Daycare Center")}}
+
+    <!-- ============================================ -->
+    <!--               contact               -->
+    <!-- ============================================ -->
+    <section id="contact" class="cs-section pb-0">
+        <div class="cs-container single-column animate">
+            <div class="cs-ghl-form cs-ghl-form--plain" data-ghl-form-wrapper>
+                <div class="cs-form-loader" role="status" aria-live="polite">
+                    <span class="cs-loader-spinner" aria-hidden="true"></span>
+                    <p class="cs-loader-text">Loading secure booking form...</p>
+                </div>
+                <iframe
+                    src="https://api.leadconnectorhq.com/widget/booking/mDeuQdgEBWxml2hihwBy"
+                    style="width:100%;border:none;overflow:hidden;"
+                    scrolling="no"
+                    id="mDeuQdgEBWxml2hihwBy_1782271146883"
+                    class="cs-ghl-iframe"
+                    title="Schedule a Tour Booking Form"
+                    loading="lazy"
+                    onload="this.closest('[data-ghl-form-wrapper]').classList.add('cs-form-loaded')"
+                ></iframe>
+                <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+            </div>
+        </div>
+    </section>
+    {{cta("Have Questions Before You Visit? Give Us a Call.", "Our team is happy to answer any questions and help you find the right campus for your family.", "Call (253) 302-3904", "tel:+12533023904", "Schedule a Tour", "/schedule-a-tour/")}}
+
+{% endblock %}

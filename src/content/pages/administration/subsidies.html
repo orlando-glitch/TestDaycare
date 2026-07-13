@@ -1,0 +1,241 @@
+---
+title: "Child Care Subsidy in Lakewood, WA | Just Like Home"
+description: "Find child care subsidy options in Lakewood, WA, including WCCC/DSHS, ECEAP, Tribal assistance, military support, and discounts."
+preloadImg: ""
+permalink: 'financial-assistance/'
+eleventyNavigation:
+    key: Financial Assistance
+    order: 302
+    parent: Administration
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/administration.css">
+    <link rel="stylesheet" href="/assets/css/child-care-subsidies.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Child Care Subsidy in Lakewood, WA")}}
+
+    <!-- ============================================ -->
+    <!--               assistance-overview            -->
+    <!-- ============================================ -->
+    <section class="cs-section section-sbs" id="assistance-overview">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Page Overview</span>
+                <h2 class="cs-title">Ways Families Can Reduce Child Care Costs</h2>
+                <p class="cs-text">Child care is an important investment, but many families qualify for programs that can help reduce the cost of care. At Just Like Home Daycare Center, we want families to understand the assistance options that may be available, including center-accepted subsidy programs, Washington State child care assistance programs, preschool support options like ECEAP, and federal tax credits that may help with child care expenses.</p>
+                <p class="cs-text">This guide covers the programs accepted by our center, state child care assistance programs in Washington, federal child care tax credits, and additional ways families may be able to save on child care.</p>
+                <ul class="cs-list">
+                    <li class="cs-li"><a href="#center-subsidies">Center Discounts &amp; Subsidy Programs</a></li>
+                    <li class="cs-li"><a href="#state-programs">Child Care Assistance Programs in Washington</a></li>
+                    <li class="cs-li"><a href="#eceap-preschool-assistance">ECEAP Preschool Assistance</a></li>
+                    <li class="cs-li"><a href="#federal-credits">Federal Child Care Tax Credits</a></li>
+                    <li class="cs-li"><a href="#additional-savings">Additional Ways Families Can Save on Child Care</a></li>
+                </ul>
+            </div>
+            <div class="sbs-image">
+                <img class="cs-sun" decoding="async" src="/assets/images/sun.png" alt="sun" width="210" height="200">
+                <img class="cs-star" decoding="async" src="/assets/images/shooting-star.png" alt="star" width="274" height="193">
+                <picture class="cs-picture cs-picture-top">
+                   <source srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 300, height: 300 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 300, height: 300 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" alt="Children painting together in a daycare activity." width="300" height="300" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-bottom">
+                   <source srcset="{% getUrl '/assets/images/family-own-2.jpg' | resize({ width: 300, height: 342 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl '/assets/images/family-own-2.jpg' | resize({ width: 300, height: 342 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl '/assets/images/family-own-2.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/family-own-2.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" alt="Children painting together in a daycare activity." width="300" height="342" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-tall">
+                   <source srcset="{% getUrl '/assets/images/family-own-3.jpg' | resize({ width: 300, height: 662 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl '/assets/images/family-own-3.jpg' | resize({ width: 300, height: 662 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl '/assets/images/family-own-3.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/family-own-3.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" alt="Children painting together in a daycare activity." width="300" height="662" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <!-- ============================================ -->
+    <!--               center-subsidies               -->
+    <!-- ============================================ -->
+    <section id="center-subsidies" class="content-page-tabbed cs-section pt-0">
+        <div class="cs-container animate">
+            <div class="text-content">
+                <span class="cs-topper">Center-Specific Subsidies &amp; Discounts</span>
+                <h2 class="cs-title">Child Care Assistance Programs Accepted at Just Like Home Daycare Center</h2>
+                <p class="cs-text">Just Like Home Daycare Center accepts multiple assistance options that can lower tuition, including WCCC/DSHS, ECEAP, Tribal assistance, military fee support, and select center discounts.</p>
+                <p class="cs-text">Each program has different rules and paperwork. Apply through the appropriate agency first, then contact our team for provider details needed for enrollment.</p>
+
+                <div class="tab-wrapper">
+                    <h3 class="cs-sub-title" id="wccc-assistance">Working Connections Child Care / WCCC</h3>
+                    <p class="cs-text">Working Connections Child Care (WCCC) helps eligible families pay for care while parents work, attend school, or join approved training.</p>
+                    <p class="cs-text">We accept WCCC/DSHS assistance. If approved, families typically pay their assigned copay and any remaining balance.</p>
+                    <p class="cs-text">For current rules, review the <a class="text-link" href="https://www.dcyf.wa.gov/services/earlylearning-childcare/getting-help/wccc" target="_blank" rel="noopener noreferrer">official DCYF WCCC page</a>. To apply online, use <a class="text-link" href="https://www.washingtonconnection.org/eapplication/home.go?action=Introduction&source=" target="_blank" rel="noopener noreferrer">Washington Connection Apply Now</a>.</p>
+
+                    <h3 class="cs-sub-title" id="dshs-child-care-assistance">DSHS Child Care Assistance</h3>
+                    <p class="cs-text">Many families call this support DSHS child care assistance. If you are looking for daycare that accepts DSHS in Lakewood, our team can help you understand next steps.</p>
+                    <p class="cs-text">After approval, we can provide provider details needed for enrollment and payment setup.</p>
+
+                    <h3 class="cs-sub-title" id="eceap-preschool-assistance">ECEAP Preschool Assistance</h3>
+                    <p class="cs-text">ECEAP is Washington's free state-funded preschool program for eligible 3- to 5-year-olds.</p>
+                    <p class="cs-text">It focuses on school readiness and differs from general child care subsidy programs. Learn more on the <a class="text-link" href="https://www.dcyf.wa.gov/services/earlylearning-childcare/find-child-care/eceap" target="_blank" rel="noopener noreferrer">official DCYF ECEAP page</a>.</p>
+                    <p class="cs-text">Ask our team how ECEAP may connect with preschool enrollment at Just Like Home Daycare Center.</p>
+
+                    <h3 class="cs-sub-title" id="tribal-child-care-assistance">Tribal Child Care Assistance</h3>
+                    <p class="cs-text">We accept Tribal child care assistance for eligible families.</p>
+                    <p class="cs-text">Eligibility and payment rules vary by Tribe, so families should contact their Tribal child care office first. Our team can then provide required provider details.</p>
+
+                    <h3 class="cs-sub-title" id="military-child-care-aware">Military Child Care Aware / Military Fee Assistance</h3>
+                    <p class="cs-text">We accept military fee-assistance programs for eligible families who need community-based care.</p>
+                    <p class="cs-text">Families near JBLM can review options and create requests through <a class="text-link" href="https://www.militarychildcare.com/" target="_blank" rel="noopener noreferrer">MilitaryChildCare.com</a>.</p>
+                    <p class="cs-text">Once you start the process, we can provide verification forms and provider information.</p>
+
+                    <h3 class="cs-sub-title">Military Discount</h3>
+                    <p class="cs-text">We also offer a military discount. Contact us for current terms, eligibility, and whether it can be combined with approved assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               state-programs                 -->
+    <!-- ============================================ -->
+    <section id="state-programs" class="content-page-tabbed cs-section pt-0">
+        <div class="cs-container animate">
+            <div class="text-content">
+                <span class="cs-topper">State Child Care Assistance Programs</span>
+                <h2 class="cs-title">Child Care Subsidy Programs in Washington</h2>
+                <p class="cs-text">Washington offers programs that can lower child care costs for eligible families while parents work, attend school, or complete approved training.</p>
+                <p class="cs-text">For families in Lakewood, the two key programs are WCCC and ECEAP. For an overview, visit the <a class="text-link" href="https://www.dcyf.wa.gov/services/earlylearning-childcare/getting-help" target="_blank" rel="noopener noreferrer">DCYF child care assistance page</a>.</p>
+
+                <div class="tab-wrapper">
+                    <h3 class="cs-sub-title">Working Connections Child Care</h3>
+                    <p class="cs-text">WCCC is Washington's main child care subsidy program and can cover a portion of approved child care costs.</p>
+                    <p class="cs-text">Eligibility depends on factors like income, household size, residency, and approved activities such as work, school, or training.</p>
+                    <p class="cs-text">For eligibility and application details, review the <a class="text-link" href="https://www.dcyf.wa.gov/services/earlylearning-childcare/getting-help/wccc" target="_blank" rel="noopener noreferrer">official DCYF WCCC page</a>.</p>
+
+                    <h3 class="cs-sub-title">Early Childhood Education and Assistance Program / ECEAP</h3>
+                    <p class="cs-text">ECEAP is Washington's free preschool program for eligible children and focuses on school readiness.</p>
+                    <p class="cs-text">It is different from general child care subsidy programs because it is specifically for preschool-age children.</p>
+                    <p class="cs-text">Families can review requirements and local provider steps on the <a class="text-link" href="https://www.dcyf.wa.gov/services/earlylearning-childcare/find-child-care/eceap" target="_blank" rel="noopener noreferrer">official DCYF ECEAP page</a>.</p>
+
+                    <h3 class="cs-sub-title">Who Qualifies for Child Care Subsidies?</h3>
+                    <p class="cs-text">Eligibility varies by program but usually includes income, household size, residency, and parent activity such as work, school, or training.</p>
+                    <p class="cs-text">ECEAP also considers child age, family circumstances, and local program availability.</p>
+                    <p class="cs-text">Because rules differ, confirm eligibility through the appropriate program pages before applying.</p>
+
+                    <h3 class="cs-sub-title">How to Apply for Child Care Assistance</h3>
+                    <p class="cs-text">Apply through the program that fits your family. To start online, use <a class="text-link" href="https://www.washingtonconnection.org/eapplication/home.go?action=Introduction&source=" target="_blank" rel="noopener noreferrer">Washington Connection Apply Now</a>.</p>
+                    <p class="cs-text">Most applications require household, income, activity, and child information, plus your selected provider details.</p>
+                    <p class="cs-text">If you need provider information from Just Like Home during the process, our team can help with the next steps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               federal-credits                -->
+    <!-- ============================================ -->
+    <section id="federal-credits" class="section-prose cs-section bg-secondary" data-wave-scroll>
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Federal Tax Credits &amp; Child Care FSA (2026 Update)</span>
+                <h2 class="cs-title">Federal Tax Benefits That Help With Child Care Costs</h2>
+                <p class="cs-text">Tax credits can reduce taxes dollar-for-dollar, and some are partially refundable. The amounts below reflect current IRS guidance available in 2026 and may change by tax year.</p>
+
+                <div class="tab-wrapper">
+                    <h3 class="cs-h3">Child Tax Credit (CTC)</h3>
+                    <p class="cs-text">Eligible families may claim up to $2,200 per qualifying child, with up to $1,700 potentially refundable through the Additional Child Tax Credit, based on income and eligibility. See the <a class="text-link" href="https://www.irs.gov/credits-deductions/individuals/child-tax-credit" target="_blank" rel="noopener noreferrer">IRS Child Tax Credit page</a>.</p>
+
+                    <h3 class="cs-h3">Child &amp; Dependent Care Tax Credit</h3>
+                    <p class="cs-text">Families may claim 20% to 35% of qualifying care expenses so a parent or guardian can work or look for work, based on income. The expense limit is up to $3,000 for one qualifying person or $6,000 for two or more. See <a class="text-link" href="https://www.irs.gov/credits-deductions/individuals/child-and-dependent-care-credit-information" target="_blank" rel="noopener noreferrer">IRS Child and Dependent Care Credit</a>.</p>
+
+                    <h3 class="cs-h3">Dependent Care Flexible Spending Account (FSA)</h3>
+                    <p class="cs-text">Some employers offer a Dependent Care FSA, which generally allows up to $5,000 in pre-tax contributions per household each year ($2,500 if married filing separately). Learn more in <a class="text-link" href="https://www.irs.gov/publications/p503" target="_blank" rel="noopener noreferrer">IRS Publication 503</a>.</p>
+
+                    <h3 class="cs-h3">Earned Income Tax Credit (EITC)</h3>
+                    <p class="cs-text">The Earned Income Tax Credit (EITC) helps low- to moderate-income workers and families reduce taxes owed and may increase refunds. Credit amounts vary by income, filing status, and number of qualifying children. See the <a class="text-link" href="https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit-eitc" target="_blank" rel="noopener noreferrer">IRS Earned Income Tax Credit (EITC) page</a>.</p>
+                </div>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 700, height: 740 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 700, height: 740 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 700, height: 740 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | jpeg %}" alt="Children learning and playing with teachers in a daycare classroom." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               additional-savings             -->
+    <!-- ============================================ -->
+    <section id="additional-savings" class="content-page-tabbed cs-section pb-0 pt-12">
+        <div class="cs-container animate">
+            <div class="text-content">
+                <span class="cs-topper">Additional Ways Families Can Save on Child Care</span>
+                <h2 class="cs-title">Additional Ways Families Can Save on Child Care</h2>
+                <p class="cs-text">In addition to WCCC, ECEAP, DSHS, Tribal and military assistance, and federal tax credits, families may have other ways to lower child care costs.</p>
+
+                <div class="tab-wrapper">
+                    <h3 class="cs-sub-title">Ask About Current Discounts</h3>
+                    <p class="cs-text">Ask our team about current discounts, including our military discount. Availability and eligibility can vary.</p>
+
+                    <h3 class="cs-sub-title">Check Employer Benefits</h3>
+                    <p class="cs-text">Some employers offer dependent care benefits, child care reimbursements, or flexible spending accounts. Check with your HR team to see what is available.</p>
+
+                    <h3 class="cs-sub-title">Use a Dependent Care FSA</h3>
+                    <p class="cs-text">Some families can use a Dependent Care Flexible Spending Account to set aside pre-tax dollars for eligible child care expenses.</p>
+                    <p class="cs-text">Confirm contribution limits and eligibility rules with your employer or benefits provider.</p>
+
+                    <h3 class="cs-sub-title">Keep Child Care Payment Records</h3>
+                    <p class="cs-text">Keep records of tuition payments, approvals, copays, receipts, and tax documents. Good records can help with applications, renewals, and tax filing.</p>
+
+                    <h3 class="cs-sub-title">Talk With Our Team Early</h3>
+                    <p class="cs-text">If you plan to use WCCC, DSHS, ECEAP, Tribal, or military assistance, contact our team early so we can share any provider details needed before your child's start date.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               assistance-cta                 -->
+    <!-- ============================================ -->
+    <section class="cta cs-section">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray.svg" alt="bear" width="450" height="500">
+        <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn" width="426" height="279">
+        <div class="cs-container animate">
+            <h2 class="cs-title">Have Questions About Child Care Assistance in Lakewood?</h2>
+            <p class="cs-text">Our team can help you understand the next steps for using financial assistance at Just Like Home Daycare Center.</p>
+            <div class="button-group">
+                <a href="tel:+12533023904" class="button-solid">Call 253-302-3904</a>
+                <a href="/schedule-a-tour/" class="button-outline">Schedule Tour</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

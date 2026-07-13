@@ -1,0 +1,94 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+{% set bannerEmail = client.email %}
+{% set bannerPhoneForTel = client.phoneForTel %}
+{% set bannerPhoneFormatted = client.phoneFormatted %}
+{% set bannerHours = client.hours %}
+{% set bannerHoursMapLink = client.locations[1].address.mapLink %}
+
+<div id="cs-top-banner" role="region" aria-label="Main contact information">
+    <div class="cs-banner-container">
+        <a class="cs-banner-item cs-banner-link cs-banner-email" href="mailto:{{bannerEmail}}">
+            <img class="cs-banner-icon" loading="lazy" decoding="async" src="/assets/svgs/mail.svg" alt="" width="16" height="16" aria-hidden="true" data-img2picture-ignore>
+            <span class="cs-banner-label">Email</span>
+            <span class="cs-banner-value">{{bannerEmail}}</span>
+        </a>
+        <a class="cs-banner-item cs-banner-link cs-banner-phone" href="tel:{{bannerPhoneForTel}}">
+            <img class="cs-banner-icon" loading="lazy" decoding="async" src="/assets/svgs/phone.svg" alt="" width="16" height="16" aria-hidden="true" data-img2picture-ignore>
+            <span class="cs-banner-label">Phone</span>
+            <span class="cs-banner-value">{{bannerPhoneFormatted}}</span>
+        </a>
+        <a class="cs-banner-item cs-banner-link cs-banner-hours" href="{{bannerHoursMapLink}}" target="_blank" rel="noopener noreferrer" aria-label="View Custer 7513 location on Google Maps">
+            <img class="cs-banner-icon" loading="lazy" decoding="async" src="/assets/svgs/hours.svg" alt="" width="16" height="16" aria-hidden="true" data-img2picture-ignore>
+            <span class="cs-banner-label">Hours</span>
+            <span class="cs-banner-value">{{bannerHours}}</span>
+        </a>
+    </div>
+</div>
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        {# Nav Logo #}
+        <a href="/" class="cs-logo" aria-label="back to home">
+            <img src="{% getUrl '/assets/images/logo-new.png' | resize({ width: 128 }) | avif({ quality: 50, effort: 6 }) %}" alt="logo" width="210" height="29" aria-hidden="true" decoding="async" fetchpriority=high>
+        </a>
+        {# Navigation List #}
+        <nav class="cs-nav">
+            {# Mobile Nav Toggle #}
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <span class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </span>
+            </button>
+            {#  We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are #}
+            {#  This also allows for easy substitution of CodeStitch navigations. Just replace the .cs-ul-wrapper in the new navigation with this one  #}
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                {% set navPages = collections.all | eleventyNavigation %}
+                {#  Loop through all pages with eleventyNavigation in the frontmatter #}
+                {% for entry in navPages %}
+                    {#  Define a hasChild variable to make it easier to test what links are dropdowns #}
+                    {% set hasChild = entry.children.length %}
+
+                    {#  If this page is a dropdown, give it the appropriate classes, icons, and accessibility attributes #}
+                    <li class="cs-li {% if hasChild %} cs-dropdown {% endif %}" {% if hasChild %} tabindex="0"{% endif %}>
+
+                    {% if entry.url %}
+                        {#  If entry.url exists, render an anchor tag  #}
+                        <a href="{{ entry.url }}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}">{{ entry.key }}</a>
+                    {% else %}
+                        {#  If entry.url does not exist, render a span tag instead  #}
+                        <span class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}">
+                            {{ entry.key }}
+                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true" data-img2picture-ignore>
+                        </span>
+                    {% endif %}
+
+                    {#  Dropdowns have another ul/li set up within the parent li. Render in the same way as a normal link  #}
+                    {% if hasChild %}
+                        <ul class="cs-drop-ul">
+                        {% for child in entry.children %}
+                            <li class="cs-drop-li">
+                            <a href="{{ child.url }}" class="cs-li-link cs-drop-link">{{ child.key }}</a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                    </li>
+                {% endfor %}
+                    <li class="cs-li cs-mobile-tour-li">
+                        <a href="/schedule-a-tour/" class="cs-li-link cs-mobile-tour-link {% if page.url == '/schedule-a-tour/' %} cs-active {% endif %}">Schedule a Tour</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <a href="/schedule-a-tour/" class="button-solid">Schedule a Tour</a>
+        </div>
+    </div>
+</header>
+         

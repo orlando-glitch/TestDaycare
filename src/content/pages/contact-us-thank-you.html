@@ -1,0 +1,68 @@
+---
+title: "Thank You"
+description: "Thank You Page"
+preloadImg: ""
+permalink: 'contact-us/thank-you/'
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/extra.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    Banner                   -->
+    <!-- ============================================ -->
+
+    <section class="page-banner cs-section">
+        <div class="cs-container animate">  
+            <div class="text-content">
+                <h1 class="cs-hero-title text-center">
+                    Thank You for Reaching Out!<br>Schedule a Tour Below
+                </h1>
+                <p class="cs-text last-line">We appreciate you contacting us!  We'll get back to you soon. The best way to learn more about our program is to schedule a tour below.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                Schedule-tour              -->
+    <!-- ============================================ -->
+    <section id="schedule-tour" class="cs-section pb-0">
+        <div class="cs-container animate">
+            <div class="cs-ghl-form cs-ghl-form--calendar" data-ghl-form-wrapper>
+                <div class="cs-form-loader" role="status" aria-live="polite">
+                    <span class="cs-loader-spinner" aria-hidden="true"></span>
+                    <p class="cs-loader-text">Loading secure booking form...</p>
+                </div>
+                <iframe
+                    src="https://api.leadconnectorhq.com/widget/booking/mDeuQdgEBWxml2hihwBy"
+                    style="width:100%;border:none;overflow:hidden;"
+                    scrolling="no"
+                    id="mDeuQdgEBWxml2hihwBy_1782271146883"
+                    class="cs-ghl-iframe"
+                    title="Schedule a Tour Booking Form"
+                    loading="lazy"
+                    onload="this.closest('[data-ghl-form-wrapper]').classList.add('cs-form-loaded')"
+                ></iframe>
+                <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                cta               -->
+    <!-- ============================================ -->
+
+    {{cta("Schedule a Tour and Experience Just Like Home", "Come see what makes Just Like Home different. Meet our teachers, explore our classrooms, and experience our caring community firsthand.", "Schedule Tour", "/schedule-a-tour/", client.phoneFormatted, "tel:" ~ client.phoneForTel)}}
+
+
+    {% endblock %}

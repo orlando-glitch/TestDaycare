@@ -1,0 +1,37 @@
+---
+title: "404"
+description: "404 Page"
+preloadImg: ""
+permalink: '/404.html'
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/extra.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    Banner                   -->
+    <!-- ============================================ -->
+
+    <section class="page-banner cs-section">
+        <div class="cs-container animate">         
+            <div class="text-content">
+                <h1 class="cs-hero-title text-center">
+                    Page Not Found
+                </h1>
+                <p class="cs-text">
+                    Page not found. The link may be broken or moved. Return to our <a href="/" class="text-link">home page</a> or <a href="/contact-us/" class="text-link">contact us</a> for help.
+                </p>
+                <a href="tel:{{client.phoneForTel}}" class="button-solid">{{client.phoneFormatted}}</a>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}

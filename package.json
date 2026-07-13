@@ -1,0 +1,56 @@
+{
+	"name": "starter-kit-v4",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch:eleventy": "eleventy --serve",
+		"build:eleventy": "eleventy",
+		"build:sass": "sass --style=compressed src/assets/sass:./public/assets/css",
+		"watch:sass": "sass --watch src/assets/sass:./public/assets/css",
+		"watch:cms": "npx netlify-cms-proxy-server",
+		"start": "del-cli \"./public/**\" \"!./public/assets/images\" \"!./public/assets/images/**\" --force && npm-run-all --parallel watch:*",
+		"build": "npm-run-all --parallel build:*",
+		"validate": "node scripts/validate-html.js",
+		"build-and-validate": "npm run build && npm run validate",
+		"check-links": "node scripts/broken-link-check.js",
+		"optimize-images": "node scripts/image-optimizer-ai.js",
+		"image-picker": "node scripts/image-picker-server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/OakHarbor/Starter-Kit-v4-Eleventy-.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/OakHarbor/Starter-Kit-v4-Eleventy-/issues"
+	},
+	"homepage": "https://github.com/OakHarbor/Starter-Kit-v4-Eleventy-#readme",
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"@11ty/eleventy-navigation": "^0.3.5",
+		"dotenv": "^17.2.4",
+		"glob": "^10.3.10",
+		"openai": "^4.73.0"
+	},
+	"dependencies": {
+		"@11ty/eleventy-plugin-directory-output": "^1.0.1",
+		"@codestitchofficial/eleventy-plugin-sharp-images": "^2.1.1",
+		"@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+		"@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+		"autoprefixer": "^10.4.16",
+		"broken-link-checker": "^0.6.7",
+		"codestitch-sharp-image-automation": "^0.3.0",
+		"del-cli": "^5.0.0",
+		"eleventy-critical-css": "^2.0.2",
+		"esbuild": "^0.25.5",
+		"html-validator": "^5.1.18",
+		"netlify-cms-proxy-server": "^1.3.24",
+		"netlify-plugin-cache": "^1.0.3",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.32",
+		"sass": "^1.63.3"
+	}
+}

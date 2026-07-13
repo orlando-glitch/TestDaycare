@@ -1,0 +1,233 @@
+/* STYLE SPECIFIC FOR COMPONENTS */
+
+/*-- -------------------------- -->
+<---               CTA          -->
+<--- -------------------------- -*/
+.cta {
+	padding: clamp(5rem, 8.5vw, 9rem) clamp(1rem, 1.5vw, 2rem);
+	position: relative;
+	z-index: 11;
+
+	.cs-container {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		max-width: calc(940 / 16 * 1rem);
+	}
+
+	.cs-title {
+		max-width: 700px;
+		font-size: clamp(2rem, 5.2vw, 4rem);
+		line-height: 1.1;
+		margin-bottom: 0;
+		color: var(--secondary);
+
+	}
+
+	.cs-text {
+		color: var(--bodyTextColor);
+		line-height: 1.5;
+		max-width: calc(620 / 16 * 1rem);
+		margin: 0;
+	}
+
+	.button-group {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin-top: 0.5rem;
+	}
+
+	.button-solid {
+		background: var(--secondary);
+		color: #fff;
+	}
+
+	.button-outline {
+		font-size: calc(16 / 16 * 1rem);
+		line-height: clamp(2.875em, 5.5vw, 3.5em);
+		text-decoration: none;
+		font-weight: 700;
+		text-align: center;
+		margin: 0;
+		color: var(--secondary);
+		min-width: calc(150 / 16 * 1rem);
+		padding: 0 calc(24 / 16 * 1rem);
+		background-color: white;
+		border: 1px solid rgba(28, 28, 28, 0.45);
+		border-radius: calc(50 / 16 * 1rem);
+		display: inline-block;
+		box-sizing: border-box;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: var(--secondary);
+			color: #fff;
+		}
+	}
+
+    .cs-bear {
+        position: absolute;
+        bottom: -1rem;
+        right: -1rem;
+        width: calc(160 / 16 * 1em);
+        height: auto;
+    }
+    .cs-saturn {
+        position: absolute;
+		bottom: 1rem;
+		left: -1rem;
+        width: calc(160 / 16 * 1rem);
+        height: auto;
+    }
+
+	@media screen and (min-width: 1024px) {
+		.cs-bear {
+			font-size: min(1vw, 1rem);
+			bottom: unset;
+			top: -5rem;
+			right: -11rem;
+			width: calc(450 / 16 * 1em);
+			height: calc(500 / 16 * 1em);
+		}
+		.cs-saturn {
+			font-size: min(1vw, 1rem);
+			bottom: -7rem;
+			left: -6rem;
+			width: calc(427 / 16 * 1rem);
+			height: calc(279 / 16 * 1rem);
+		}
+	}
+}
+
+
+/*-- -------------------------- -->
+<---        Page Banner         -->
+<--- -------------------------- -*/
+.page-banner {
+    position: relative;
+    text-align: center;
+	overflow: hidden;
+	isolation: isolate;
+	background-color: var(--primary);
+
+    padding: clamp(8rem, 25vw, 15rem) clamp(1rem, 1.5vw, 2rem);
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		border-radius: 50%;
+		pointer-events: none;
+		z-index: 1;
+	}
+
+	&::before {
+		top: -8rem;
+		left: -6rem;
+		width: clamp(14rem, 34vw, 24rem);
+		height: clamp(14rem, 34vw, 24rem);
+		background: rgba(255, 255, 255, 0.45);
+	}
+
+	&::after {
+		right: -7rem;
+		bottom: -10rem;
+		width: clamp(16rem, 38vw, 28rem);
+		height: clamp(16rem, 38vw, 28rem);
+		background: rgba(28, 28, 28, 0.06);
+	}
+
+	&.cs-section {
+		animation: none;
+	}
+
+	.cs-container {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: clamp(6rem, 25vw, 12rem);
+		opacity: 1;
+		max-width: 950px;
+		animation: fadeUpTransition 0.7s ease-in-out forwards;
+	}
+
+	.text-content {
+		width: 100%;
+		max-width: calc(900 / 16 * 1rem);
+	}
+
+    .cs-hero-title {
+		margin: auto;
+		color: var(--headingTextColor);
+		max-width: 650px;
+		margin-top: 1rem;	
+    }
+
+    .cs-clouds {
+        position: absolute;
+        bottom: -12vw;
+        width: 100%;
+        left: 0;
+        z-index: 5;
+        height: auto;
+		user-select: none;
+		pointer-events: none;
+    }
+
+	@media screen and (max-width: 550px) {
+		padding-top: clamp(7rem, 20vw, 8.5rem);
+		padding-bottom: clamp(6.25rem, 24vw, 8.5rem);
+
+		.text-content {
+			max-width: min(100%, 24rem);
+		}
+
+		.cs-hero-title {
+			max-width: 22ch;
+			margin-top: 0.75rem;
+		}
+
+		.cs-clouds {
+			bottom: -16vw;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		margin-top: 0;
+		padding-bottom: clamp(10rem, 15vw, 15rem);
+
+        .cs-clouds {
+            position: absolute;
+            bottom: -16.5vw;
+            width: 100%;
+            left: 0;
+            z-index: 5;
+            height: auto;
+        }
+
+		&::before {
+			top: -10rem;
+			left: -3rem;
+		}
+
+		&::after {
+			right: -5rem;
+			bottom: -12rem;
+		}
+	}
+}
+
+/* Hide anti-aliased seam between banner clouds and the next section background. */
+.page-banner + section {
+	position: relative;
+	margin-top: -2px;
+	background-color: #fff;
+	z-index: 10;
+}

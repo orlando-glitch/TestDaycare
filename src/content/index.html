@@ -1,0 +1,625 @@
+---
+title: "Child Care in Lakewood, WA | Just Like Home Daycare"
+description: "Nurturing child care in Lakewood, WA for infants through school-age children. Open 5:30 AM to midnight with subsidies and ECEAP support."
+preloadImg: ""
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+sitemap:
+    priority: 1.00
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                home-hero                 -->
+    <!-- ============================================ -->
+    <section id="home-hero">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Family-Owned Childcare Since 2006</span>
+                <h1 class="cs-hero-title">
+                    Child Care in Lakewood, WA That Feels Just Like Home
+                </h1>
+                <p class="cs-text">Nurturing daycare for infants through school-age children, with flexible hours from 5:30 AM to midnight for working families.</p>
+                <div class="button-group">
+                    <a href="/schedule-a-tour/" class="button-solid white">Schedule a Tour</a>
+                    <a href="#home-service" class="button-solid">Explore Our Programs</a>
+                </div>
+                <ul class="cs-list">
+                    <li class="cs-li"><img class="cs-star" decoding="async" src="/assets/svgs/small-star.svg" alt="star" width="17" height="16">Serving Lakewood Families Since 2006</li>
+                    <li class="cs-li"><img class="cs-star" decoding="async" src="/assets/svgs/small-star.svg" alt="star" width="17" height="16">Four Convenient Lakewood Locations</li>
+                    <li class="cs-li cs-li-multi"><img class="cs-star" decoding="async" src="/assets/svgs/small-star.svg" alt="star" width="17" height="16"><span class="cs-li-text">WCCC, ECEAP, Tribal, and Military Child Care Aware accepted</span></li>
+                </ul>
+            </div>
+            <div class="image-group">
+                <img class="cs-rocket animate" decoding="async" src="/assets/svgs/rocket.svg" alt="rocket" width="273" height="273">
+                <img class="cs-bear float" decoding="async" src="/assets/svgs/bear.svg" alt="bear" width="185" height="206">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/home-hero.png' | resize({ width: 530 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/home-hero.png' | resize({ width: 530 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/home-hero.png' | resize({ width: 530 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/home-hero.png' | resize({ width: 619 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/home-hero.png' | resize({ width: 619 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/home-hero.png' | resize({ width: 619 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/home-hero.png' | resize({ width: 619 }) | jpeg %}" alt="Kid Playing in Daycare Just Like Home" width="619" height="646" fetchpriority="high" decoding="async" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <img class="cs-clouds animate" decoding="async" src="/assets/svgs/clouds-hero.svg" alt="rocket" width="1440" height="533">
+    </section>
+    
+    <!-- ============================================ -->
+    <!--                home-service                 -->
+    <!-- ============================================ -->
+    <section id="home-service" class="cs-section">
+        <div class="cs-container animate">
+            <img class="cs-rocket animate" decoding="async" src="/assets/svgs/rocket-gray.svg" alt="rocket" width="398" height="398">
+            <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray.svg" alt="bear" width="294" height="327">
+            <span class="cs-topper">Programs For Every Stage</span>
+            <h2 class="cs-title">A Nurturing Place to Learn, Play, and Grow</h2>
+            <p class="cs-text">At Just Like Home Daycare Center, we provide warm, dependable child care in Lakewood, WA for children from 1 month through 13 years old. Across our <a class="text-link" href="#home-locations">four Lakewood locations</a>, children are supported through <a class="text-link" href="/about/curriculum/">play-based learning</a>, caring relationships, age-appropriate routines, and a home-like environment where they can feel safe, loved, and ready to grow.</p>
+            <div class="cs-card-group animate">
+                <a class="cs-item" href="/programs/infant-care/">
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl '/assets/images/programs-infant.jpg' | resize({ width: 400, height: 280 }) | avif({ quality: 50, effort: 6 }) %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/programs-infant.jpg' | resize({ width: 400, height: 280 }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/programs-infant.jpg' | resize({ width: 400, height: 280 }) | jpeg %}" alt="Infants in a nurturing daycare setting" width="400" height="280">
+                    </picture>
+                    <div class="cs-content">
+                        <span class="cs-age">Ages 1–11 Months</span>
+                        <h3 class="cs-h3">Infant Care</h3>
+                        <p class="cs-text">For ages 1 to 11 months. Our infant daycare in Lakewood provides gentle, attentive care focused on comfort, feeding routines, rest, safety, and responsive support.</p>
+                        <span class="card-button">View Infant Care</span>
+                    </div>
+                </a>
+                <a class="cs-item" href="/programs/toddler-program/">
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl '/assets/images/programs-toddler.jpg' | resize({ width: 400, height: 280 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/programs-toddler.jpg' | resize({ width: 400, height: 280 }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/programs-toddler.jpg' | resize({ width: 400, height: 280 }) | jpeg %}" alt="Toddlers exploring and learning through play" width="400" height="280">
+                    </picture>
+                    <div class="cs-content">
+                        <span class="cs-age">Ages 1–3 Years</span>
+                        <h3 class="cs-h3">Toddler Program</h3>
+                        <p class="cs-text">For ages 1 to 3 years. Guided play, music, movement, routines, and hands-on exploration support early language, social growth, and independence.</p>
+                        <span class="card-button">View Toddler Program</span>
+                    </div>
+                </a>
+                <article class="cs-item">
+                    <a class="cs-picture-link" href="/programs/preschool/" aria-label="View Preschool Program">
+                        <picture class="cs-picture">
+                            <source srcset="{% getUrl '/assets/images/programs-preschool.jpg' | resize({ width: 400, height: 280 }) | avif({ quality: 50, effort: 6 }) %}" type="image/avif">
+                            <source srcset="{% getUrl '/assets/images/programs-preschool.jpg' | resize({ width: 400, height: 280 }) | webp %}" type="image/webp">
+                            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/programs-preschool.jpg' | resize({ width: 400, height: 280 }) | jpeg %}" alt="Preschool children learning in a classroom" width="400" height="280">
+                        </picture>
+                    </a>
+                    <div class="cs-content">
+                        <span class="cs-age">Ages 3–5 Years</span>
+                        <h3 class="cs-h3">Preschool Program</h3>
+                        <p class="cs-text">For ages 3 to 5 years. Our preschool builds kindergarten readiness with Creative Curriculum and play-based learning. ECEAP may offer free preschool. Learn about <a class="text-link" href="/financial-assistance/">available subsidies</a>.</p>
+                        <a class="card-button" href="/programs/preschool/">View Preschool Program</a>
+                    </div>
+                </article>
+                <a class="cs-item" href="/programs/school-age-care/">
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl '/assets/images/programs-school-age.jpg' | resize({ width: 400, height: 280 }) | avif({ quality: 50, effort: 6 }) %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/programs-school-age.jpg' | resize({ width: 400, height: 280 }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/programs-school-age.jpg' | resize({ width: 400, height: 280 }) | jpeg %}" alt="School-age children reading and learning" width="400" height="280">
+                    </picture>
+                    <div class="cs-content">
+                        <span class="cs-age">Ages 6–13 Years</span>
+                        <h3 class="cs-h3">School-Age Care</h3>
+                        <p class="cs-text">For ages 6 to 13 years. School-age care provides a safe, supportive place before school, after school, during breaks, and during extended care hours.</p>
+                        <span class="card-button">View School-Age Care</span>
+                    </div>
+                </a>
+                <a class="cs-item" href="/programs/flexible-hours-child-care/">
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 400, height: 280 }) | avif({ quality: 50, effort: 6 }) %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 400, height: 280 }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 400, height: 280 }) | jpeg %}" alt="Teacher guiding children in a group activity during extended-hours child care" width="400" height="280">
+                    </picture>
+                    <div class="cs-content">
+                        <span class="cs-age">Open 5:30 AM to Midnight</span>
+                        <h3 class="cs-h3">Flexible Hours Child Care</h3>
+                        <p class="cs-text">Open Monday through Friday from 5:30 AM to midnight, our program supports military, healthcare, service industry, and other non-traditional work schedules.</p>
+                        <span class="card-button">View Flexible Hours</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            home-flexible-care               -->
+    <!-- ============================================ -->
+    <section id="home-flexible" class="cs-section pt-0">
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <span class="cs-topper">Flexible Care for Working Families</span>
+                <h2 class="cs-title">Open Early, Close Late, and Built Around Real Family Schedules</h2>
+                <p class="cs-text">Many families need child care that goes beyond the usual 9-to-5 schedule. Just Like Home Daycare Center was created to support parents who work early mornings, evenings, overnight-adjacent shifts, and other non-traditional schedules.</p>
+                <p class="cs-text">Our Lakewood child care centers are open Monday through Friday from 5:30 AM to midnight, giving families more flexibility and peace of mind. Whether you are commuting, serving in the military, working in healthcare, managing service industry hours, or balancing a changing schedule, <a class="text-link" href="/about/our-story/">our team</a> is here to help your child feel safe, supported, and at home.</p>
+                <a href="/programs/flexible-hours-child-care/" class="button-solid">Learn More About Flexible Hours</a>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 700, height: 740 }) | avif({ quality: 50, effort: 6 }) %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 700, height: 740 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 700, height: 740 }) | jpeg %}" type="image/jpeg">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | avif({ quality: 50, effort: 6 }) %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | jpeg %}" alt="Children learning and playing with teachers in a Lakewood daycare classroom." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                home-sbs               -->
+    <!-- ============================================ -->
+    <section id="home-sbs" class="cs-section" data-wave-scroll>
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Family-Owned Child Care Since 2006</span>
+                <h2 class="cs-hero-title">Family-Owned Child Care Built Around the Needs of Working Families</h2>
+                <p class="cs-text">Just Like Home Daycare Center has served families since 2006, beginning as a home daycare created to support parents who needed care outside traditional business hours. Nearly 20 years later, that same mission continues across our <a class="text-link-white" href="#home-locations">Lakewood locations</a>.</p>
+                <p class="cs-text">We are family-owned and family-operated, and our name reflects the kind of environment we work to create every day: a place where children feel safe, respected, loved, and valued, just like home.</p>
+                <ul class="cs-list">
+                    <li class="cs-li">Serving families since 2006</li>
+                    <li class="cs-li">Family-owned and operated</li>
+                    <li class="cs-li">Four convenient Lakewood locations</li>
+                    <li class="cs-li">Open Monday through Friday until midnight</li>
+                    <li class="cs-li">Play-based early learning environment</li>
+                    <li class="cs-li">Support for <a class="text-link-white" href="/programs/infant-care/">infants</a> through <a class="text-link-white" href="/programs/school-age-care/">school-age children</a></li>
+                </ul>
+                <a href="/about/our-story/" class="button-solid">Learn More About Us</a>
+            </div>
+            <div class="sbs-image">
+                <img class="cs-sun float" decoding="async" src="/assets/images/sun.png" alt="sun" width="210" height="200">
+                <img class="cs-star" decoding="async" src="/assets/images/shooting-star.png" alt="star" width="274" height="193">
+                <picture class="cs-picture cs-picture-top">
+                   <source srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 300, height: 300 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 300, height: 300 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" alt="Children painting together in a daycare activity." width="300" height="300" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-bottom">
+                   <source srcset="{% getUrl '/assets/images/family-own-2.jpg' | resize({ width: 300, height: 342 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl '/assets/images/family-own-2.jpg' | resize({ width: 300, height: 342 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl '/assets/images/family-own-2.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/family-own-2.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" alt="Children painting together in a daycare activity." width="300" height="342" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-tall">
+                   <source srcset="{% getUrl '/assets/images/family-own-3.jpg' | resize({ width: 300, height: 662 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl '/assets/images/family-own-3.jpg' | resize({ width: 300, height: 662 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl '/assets/images/family-own-3.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/family-own-3.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" alt="Children painting together in a daycare activity." width="300" height="662" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                home-locations               -->
+    <!-- ============================================ -->
+    <section id="home-locations" class="cs-section">
+        <div class="cs-container animate">
+            <span class="cs-topper">Four Convenient Lakewood Locations</span>
+            <h2 class="cs-title">Four Lakewood Child Care Locations Close to Home and Work</h2>
+            <p class="cs-text">With four convenient child care locations in Lakewood, WA, families can choose the campus that best fits their home, work, commute, or daily routine. Our centers are located within the same general Lakewood area, making it easier for families to access trusted care while staying connected to the <a class="text-link" href="/about/our-story/">Just Like Home community</a>.</p>
+            <div class="cs-card-group">
+                <img class="cs-saturn" decoding="async" src="{% getUrl '/assets/images/saturn-and-rocket.png' | resize({ width: 427 }) | avif({ quality: 50, effort: 6 }) %}" alt="saturn and rocket" width="427" height="279">
+                <img class="cs-raining float" decoding="async" src="/assets/images/raining.png" alt="raining" width="252" height="311">
+                <a class="cs-item" href="/locations/douglas-street-campus/">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood-2.jpg' | resize({ width: 606, height: 303 }) | avif %}" type="image/avif">
+                       <source srcset="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood-2.jpg' | resize({ width: 606, height: 303 }) | webp %}" type="image/webp">
+                       <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood-2.jpg' | resize({ width: 606, height: 303 }) | jpeg %}" alt="Douglas Street Campus exterior in Lakewood." width="606" height="303">
+                    </picture>
+                    <div class="cs-content">
+                        <h3 class="cs-h3">7606 Douglas St Campus</h3>
+                        <p class="cs-address">7606 Douglas St W, Lakewood, WA 98499</p>
+                    </div>
+                </a>
+                <a class="cs-item" href="/locations/custer-7513-campus/">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood-3.jpg' | resize({ width: 606, height: 303 }) | avif %}" type="image/avif">
+                       <source srcset="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood-3.jpg' | resize({ width: 606, height: 303 }) | webp %}" type="image/webp">
+                       <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood-3.jpg' | resize({ width: 606, height: 303 }) | jpeg %}" alt="Custer 7513 Campus exterior in Lakewood." width="606" height="303">
+                    </picture>
+                    <div class="cs-content">
+                        <h3 class="cs-h3">Custer 7513 Campus</h3>
+                        <p class="cs-address">7513 Custer Rd W, Lakewood, WA 98499</p>
+                    </div>
+                </a>
+                <a class="cs-item" href="/locations/custer-7511-campus/">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood-4.jpg' | resize({ width: 606, height: 303 }) | avif %}" type="image/avif">
+                       <source srcset="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood-4.jpg' | resize({ width: 606, height: 303 }) | webp %}" type="image/webp">
+                       <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood-4.jpg' | resize({ width: 606, height: 303 }) | jpeg %}" alt="Custer 7511 Campus exterior in Lakewood." width="606" height="303">
+                    </picture>
+                    <div class="cs-content">
+                        <h3 class="cs-h3">Custer 7511 Campus</h3>
+                        <p class="cs-address">7511 Custer Rd W, Lakewood, WA 98499</p>
+                    </div>
+                </a>
+                <a class="cs-item" href="/locations/custer-7507-campus/">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood.jpg' | resize({ width: 606, height: 303 }) | avif %}" type="image/avif">
+                       <source srcset="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood.jpg' | resize({ width: 606, height: 303 }) | webp %}" type="image/webp">
+                       <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/just-like-home-daycare-center-lakewood.jpg' | resize({ width: 606, height: 303 }) | jpeg %}" alt="Custer 7507 Campus exterior in Lakewood." width="606" height="303">
+                    </picture>
+                    <div class="cs-content">
+                        <h3 class="cs-h3">Custer 7507 Campus</h3>
+                        <p class="cs-address">7507 Custer Rd W, Lakewood, WA 98499</p>
+                    </div>
+                </a>
+            </div>
+            <a href="/contact-us/" class="button-solid">Explore Our Locations</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                home-learning                -->
+    <!-- ============================================ -->
+    <section id="home-learning" class="cs-section">
+        <div class="cs-container animate">
+            <span class="cs-topper">Learning Through Play</span>
+            <h2 class="cs-title">Meaningful Learning Experiences for Every Age and Stage</h2>
+            <p class="cs-text">Children at Just Like Home grow through play, hands-on activities, creative exploration, positive relationships, and developmentally appropriate lessons. Our programs support the whole child, helping children build confidence, communication skills, independence, and a love of learning.</p>
+            <div class="cs-card-group">
+                <img class="cs-saturn" decoding="async" src="{% getUrl '/assets/images/saturn-and-rocket.png' | resize({ width: 427 }) | avif({ quality: 50, effort: 6 }) %}" alt="saturn and rocket" width="427" height="279">
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-pencil-ruler.svg" alt="" width="30" height="30">
+                    </span>
+                    <h3 class="cs-h3">Creative Curriculum</h3>
+                    <p class="cs-text">Our classrooms use Creative Curriculum to support learning through meaningful activities, guided discovery, and age-appropriate lessons connected to real developmental goals.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-puzzle.svg" alt="" width="29" height="34">
+                    </span>
+                    <h3 class="cs-h3">Play-Based Learning</h3>
+                    <p class="cs-text">Children learn best when they are actively exploring. Through purposeful play, they build problem-solving skills, creativity, social confidence, and curiosity.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-kindergarten.svg" alt="" width="38" height="31">
+                    </span>
+                    <h3 class="cs-h3">Kindergarten Readiness</h3>
+                    <p class="cs-text">Preschool children are supported with early literacy, math, social skills, emotional development, classroom routines, and independence to help prepare them for kindergarten.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-chinese-letter.svg" alt="" width="33" height="35">
+                    </span>
+                    <h3 class="cs-h3">Spanish and Baby Signing</h3>
+                    <p class="cs-text">Children are introduced to Spanish language exposure and baby signing, helping build early communication skills while celebrating diverse Lakewood family backgrounds.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-music-art.svg" alt="" width="28" height="27">
+                    </span>
+                    <h3 class="cs-h3">Music, Art, and Movement</h3>
+                    <p class="cs-text">Songs, movement, crafts, creative projects, and gross motor activities help children express themselves, build coordination, and develop imagination.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-heart.svg" alt="" width="30" height="26">
+                    </span>
+                    <h3 class="cs-h3">Social-Emotional Support</h3>
+                    <p class="cs-text">Teachers use positive guidance and Love and Logic strategies to help children build emotional awareness, independence, problem-solving skills, and healthy relationships.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                home-benefits                -->
+    <!-- ============================================ -->
+    <section id="home-benefits" class="cs-section">
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <div class="cs-container animate">
+            <span class="cs-topper">Family Support, Meals, and Financial Assistance</span>
+            <h2 class="cs-title">More Than Child Care</h2>
+            <p class="cs-text">Just Like Home Daycare Center supports busy families with practical services, <a class="text-link-white" href="/programs/flexible-hours-child-care/">flexible care options</a>, meals, parent communication, and <a class="text-link-white" href="/financial-assistance/">financial assistance resources</a> that make quality child care more accessible.</p>
+            <div class="cs-card-group">
+                <article class="cs-item cs-item-one cs-item-pink">
+                    <h3 class="cs-h3">Meals Included</h3>
+                    <p class="cs-text">Breakfast, lunch, dinner, and after-school snacks are available. Meals are prepared on-site, and we accommodate food allergies and sensitivities.</p>
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl '/assets/images/eating-watermelon.png' | resize({ width: 308, height: 363 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/eating-watermelon.png' | resize({ width: 308, height: 363 }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/eating-watermelon.png' | resize({ width: 308, height: 363 }) | jpeg %}" alt="Child enjoying a healthy snack at daycare." width="308" height="363">
+                    </picture>
+                    <img class="design-pink" decoding="async" src="/assets/svgs/design-card-pink.svg" alt="" width="505" height="344">
+                </article>
+                <article class="cs-item cs-item-two cs-item-light">
+                    <h3 class="cs-h3">Child Care Assistance Accepted</h3>
+                    <p class="cs-text">We accept <a class="text-link" href="/financial-assistance/#center-subsidies">WCCC through DSHS</a>, <a class="text-link" href="/financial-assistance/#eceap-preschool-assistance">ECEAP</a>, <a class="text-link" href="/financial-assistance/#center-subsidies">Tribal child care assistance</a>, and <a class="text-link" href="/financial-assistance/#center-subsidies">Military Child Care Aware</a>. Our team can help families understand next steps during <a class="text-link" href="/enrollment/">enrollment</a>.</p>
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl '/assets/images/hands-subsidies.png' | resize({ width: 715, height: 262 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/hands-subsidies.png' | resize({ width: 715, height: 262 }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/hands-subsidies.png' | resize({ width: 715, height: 262 }) | jpeg %}" alt="Caregiver helping children with classroom activities." width="715" height="262">
+                    </picture>
+                    <img class="design-white" decoding="async" src="/assets/svgs/design-card-white.svg" alt="" width="715" height="520">
+                </article>
+                <article class="cs-item cs-item-three cs-item-light">
+                    <h3 class="cs-h3">Military Discounts</h3>
+                    <p class="cs-text"><a class="text-link" href="/financial-assistance/#center-subsidies">Military discounts</a> are available for eligible families as part of our commitment to serving Lakewood's armed forces community.</p>
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl '/assets/images/military-discounts.png' | resize({ width: 553, height: 410 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/military-discounts.png' | resize({ width: 553, height: 410 }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/military-discounts.png' | resize({ width: 553, height: 410 }) | jpeg %}" alt="Families spending quality time together at daycare." width="553" height="410">
+                    </picture>
+                    <img class="design-white" decoding="async" src="/assets/svgs/design-card-white-2.svg" alt="" width="715" height="520">
+                </article>
+                <article class="cs-item cs-item-four cs-item-pink">
+                    <h3 class="cs-h3">Parent Updates Through Kid Reports</h3>
+                    <p class="cs-text">Families stay connected through Kid Reports, helping parents receive important updates, daily information, and communication from their child's teachers.</p>
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl '/assets/images/parent-updates-lakewood.png' | resize({ width: 364, height: 384 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/parent-updates-lakewood.png' | resize({ width: 364, height: 384 }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/parent-updates-lakewood.png' | resize({ width: 364, height: 384 }) | jpeg %}" alt="Parent receiving an update about their child's day." width="364" height="384">
+                    </picture>
+                    <img class="design-pink" decoding="async" src="/assets/svgs/design-card-pink.svg" alt="" width="505" height="344">
+                </article>
+            </div>
+            <a href="/financial-assistance/" class="button-solid">Explore Financial Assistance</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  home-why                   -->
+    <!-- ============================================ -->
+    <section id="home-why" class="cs-section">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray-big.svg" alt="bear" width="450" height="500">    
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <span class="cs-topper">Why Families Choose Us</span>
+                <h2 class="cs-title">A Safe, Loving Environment Where Children Feel at Home</h2>
+                <p class="cs-text">Families choose Just Like Home Daycare Center because we combine dependable child care, <a class="text-link" href="/programs/flexible-hours-child-care/">flexible hours</a>, and a warm learning environment where children are treated with dignity and respect. Our goal is to give children a place where they feel secure and supported while giving parents confidence and peace of mind.</p>
+                <ul class="cs-list">
+                    <li class="cs-li">Family-owned and operated since 2006</li>
+                    <li class="cs-li">Extended hours from 5:30 AM to midnight</li>
+                    <li class="cs-li">Four convenient Lakewood locations</li>
+                    <li class="cs-li"><a class="text-link" href="/programs/infant-care/">Infant</a>, <a class="text-link" href="/programs/toddler-program/">toddler</a>, <a class="text-link" href="/programs/preschool/">preschool</a>, and <a class="text-link" href="/programs/school-age-care/">school-age programs</a></li>
+                    <li class="cs-li">Secure entry and fenced outdoor areas</li>
+                    <li class="cs-li">Indoor and outdoor security cameras</li>
+                    <li class="cs-li">Age-separated play areas</li>
+                    <li class="cs-li">Basketball court and gross motor activity areas</li>
+                    <li class="cs-li">Home-like environments with caring teachers</li>
+                    <li class="cs-li"><a class="text-link" href="/financial-assistance/">Financial assistance options accepted</a></li>
+                </ul>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 700, height: 740 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 700, height: 740 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 700, height: 740 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/children-playing-lakewood-preschool.jpg' | resize({ width: 740, height: 940 }) | jpeg %}" alt="Children learning and playing with teachers in a daycare classroom." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- ============================================ -->
+    <!--                home-faq               -->
+    <!-- ============================================ -->
+    <script defer src="/assets/js/faq.js"></script>
+    <section id="faq" class="cs-section">
+        <img class="cs-rocket float-invert" decoding="async" src="/assets/svgs/rocket-gray.svg" alt="rocket" width="645" height="645">
+        <div class="cs-container animate">
+            <span class="cs-topper">Frequently Asked Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">
+                            What ages do you accept?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We welcome children from 1 month through 13 years old, including <a class="text-link" href="/programs/infant-care/">infants</a>, <a class="text-link" href="/programs/toddler-program/">toddlers</a>, <a class="text-link" href="/programs/preschool/">preschoolers</a>, and <a class="text-link" href="/programs/school-age-care/">school-age children</a>.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">
+                            What are your hours of operation?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our Lakewood locations are open Monday through Friday from 5:30 AM to midnight. We are closed on Saturdays and Sundays.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">
+                            Do you accept child care subsidies?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. We accept <a class="text-link" href="/financial-assistance/#center-subsidies">WCCC through DSHS</a>, <a class="text-link" href="/financial-assistance/#eceap-preschool-assistance">ECEAP</a>, <a class="text-link" href="/financial-assistance/#center-subsidies">Tribal child care assistance</a>, and <a class="text-link" href="/financial-assistance/#center-subsidies">Military Child Care Aware</a>. Our team can help families understand the process and provide center information needed for <a class="text-link" href="/enrollment/">enrollment</a>.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">
+                            Are meals included?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. We provide breakfast, lunch, dinner, and after-school snacks. Meals are prepared on-site, and our team can discuss allergies and food sensitivities with families.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">
+                            Do you offer care for school-age children?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. We offer <a class="text-link" href="/programs/school-age-care/">care for school-age children ages 6 to 13</a>, including before-school, after-school, and extended care options.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-cross"></span>
+                        <span class="cs-button-text">
+                            How do I enroll my child?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Start by <a class="text-link" href="/schedule-a-tour/">scheduling a tour</a> at your preferred <a class="text-link" href="/contact-us/">Lakewood location</a>. After your visit, our team will walk you through <a class="text-link" href="/enrollment/">enrollment</a>, including payment setup, subsidy authorization if needed, paperwork, and a start date.
+                    </p>
+                </li>
+            </ul>
+            <a href="/contact-us/" class="button-solid">Contact Us</a>
+        </div>
+    </section>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What ages do you accept?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We welcome children from 1 month through 13 years old, including infants, toddlers, preschoolers, and school-age children."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are your hours of operation?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our Lakewood locations are open Monday through Friday from 5:30 AM to midnight. We are closed on Saturdays and Sundays."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you accept child care subsidies?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. We accept WCCC through DSHS, ECEAP, Tribal child care assistance, and Military Child Care Aware. Our team can help families understand the process and provide center information needed for enrollment."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Are meals included?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. We provide breakfast, lunch, dinner, and after-school snacks. Meals are prepared on-site, and our team can discuss allergies and food sensitivities with families."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you offer care for school-age children?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. We offer care for school-age children ages 6 to 13, including before-school, after-school, and extended care options."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I enroll my child?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Start by scheduling a tour at your preferred Lakewood location. After your visit, our team will walk you through enrollment, including payment setup, subsidy authorization if needed, paperwork, and a start date."
+                    }
+                }
+            ]
+        }
+    </script>
+
+    <!-- ============================================ -->
+    <!--             home-testimonials               -->
+    <!-- ============================================ -->
+    <section id="home-testimonials" class="cs-section">
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <div class="cs-container animate">
+            <span class="cs-topper">Parent Reviews</span>
+            <h2 class="cs-title">What Lakewood Families Say About Just Like Home</h2>
+            <p class="cs-text">Families often share that they appreciate our caring teachers, <a class="text-link-white" href="/programs/flexible-hours-child-care/">flexible hours</a>, supportive environment, and the peace of mind that comes from knowing their child is safe and loved.</p>
+            <div class="cs-card-group">
+                <article class="cs-item">
+                    <blockquote class="cs-quote">"My son has been attending daycare here since he was 1, and it has been two years and he is thriving. All of the teachers he has had have been fantastic. I am so happy I found such a wonderful place for my son to learn and grow."</blockquote>
+                    <div class="cs-person">
+                        <img class="cs-avatar" loading="lazy" decoding="async" src="{% getUrl '/assets/images/molly.png' | resize({ width: 84, height: 84 }) | jpeg %}" alt="Parent testimonial from Molly Houghton." width="84" height="84">
+                        <div class="cs-meta">
+                            <h3 class="cs-name">Molly Houghton</h3>
+                            <span class="cs-stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="cs-item">
+                    <blockquote class="cs-quote">"We couldn't be happier with the care our child receives at Just Like Home Daycare! They truly treat each child as their own, providing a warm, nurturing environment that feels like an extension of home. Knowing our child is in such good hands gives us peace of mind every day. Highly recommend!"</blockquote>
+                    <div class="cs-person">
+                        <img class="cs-avatar" loading="lazy" decoding="async" src="{% getUrl '/assets/images/davon.png' | resize({ width: 84, height: 84 }) | jpeg %}" alt="Parent testimonial from Davonn Youngblood." width="84" height="84">
+                        <div class="cs-meta">
+                            <h3 class="cs-name">Davonn Youngblood</h3>
+                            <span class="cs-stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="cs-item">
+                    <blockquote class="cs-quote">"Mr. Allen is wonderful, and they are incredibly understanding when it comes to military families. My son has been there since he was 3 months old, and he absolutely adores Miss M."</blockquote>
+                    <div class="cs-person">
+                        <img class="cs-avatar" loading="lazy" decoding="async" src="{% getUrl '/assets/images/chennel.png' | resize({ width: 84, height: 84 }) | jpeg %}" alt="Parent testimonial from Chennel Whyte." width="84" height="84">
+                        <div class="cs-meta">
+                            <h3 class="cs-name">Chennel Whyte</h3>
+                            <span class="cs-stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <a href="/about/our-story/" class="button-solid">View All Testimonials</a>
+        </div>
+    </section>
+
+
+    
+
+    <!-- ============================================ -->
+    <!--                cta               -->
+    <!-- ============================================ -->
+
+    {{cta("Find the Right Child Care Program for Your Family", "Schedule a tour to visit Just Like Home Daycare Center, meet our team, explore our locations, and learn more about programs, availability, and enrollment options.", "Schedule a Tour", "/schedule-a-tour/", "Contact Us", "/contact-us/")}}
+
+
+{% endblock %}

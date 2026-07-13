@@ -1,0 +1,19 @@
+{% macro cta(h2Text, pText, buttonText, buttonLink, buttonText2, buttonLink2) %}
+    <!-- ============================================ -->
+    <!--             Final Call to Action             -->
+    <!-- ============================================ -->
+    <section class="cta cs-section">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray.svg" alt="bear" width="450" height="500">
+        <img class="cs-saturn" decoding="async" src="{% getUrl '/assets/images/saturn-and-rocket.png' | resize({ width: 427 }) | avif({ quality: 50, effort: 6 }) %}" alt="saturn" width="426" height="279">
+        <div class="cs-container animate">
+            <h2 class="cs-title">
+                {{h2Text}}
+            </h2>
+            <p class="cs-text">{{pText}}</p>
+            <div class="button-group">
+                <a href="{{buttonLink}}" class="button-solid">{{buttonText}}</a>
+                <a href="{{buttonLink2}}" class="button-outline">{{buttonText2}}</a>
+            </div>
+        </div>
+    </section>
+{% endmacro %}

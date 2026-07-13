@@ -1,0 +1,143 @@
+---
+title: "Toddler Daycare in Lakewood, WA | Just Like Home Daycare Center"
+description: "Toddler daycare in Lakewood, WA for ages 1 to 3. Play-based learning, language development & social skills. Open Mon to Fri 5:30 AM to midnight. DSHS subsidies accepted."
+preloadImg: ""
+permalink: 'programs/toddler-program/'
+eleventyNavigation:
+    key: Toddler Program (1 - 3 years)
+    order: 302
+    parent: Programs
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/programs.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Toddler Daycare in Lakewood, WA", "Play-Based Learning, Ages 1 to 3")}}
+
+    <!-- ============================================ -->
+    <!--                program-sbs               -->
+    <!-- ============================================ -->
+    <section id="program-sbs" class="cs-section">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Program Overview</span>
+                <h2 class="cs-hero-title">An Engaging Toddler Program Built for Curious, Active Learners</h2>
+                <p class="cs-text">Toddlers are natural explorers, curious, energetic, and eager to make sense of the world around them. Our toddler program at Just Like Home Daycare Center in Lakewood, WA is designed to channel that energy into meaningful learning experiences that build language, movement, and social skills every single day. We serve children ages 1 through 3 across our four Lakewood campuses, all open Monday through Friday from 5:30 AM to midnight. Whether you need early-morning drop-off or late-evening pickup, our flexible schedule is here to support your family's real-life routine.</p>
+                <a href="/schedule-a-tour/" class="button-solid">Schedule a Tour</a>
+            </div>
+            <div class="sbs-image">
+                <img class="cs-sun" decoding="async" src="/assets/images/sun.png" alt="sun" width="210" height="200">
+                <img class="cs-star" decoding="async" src="/assets/images/shooting-star.png" alt="star" width="274" height="193">
+                <picture class="cs-picture cs-picture-top">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-008.jpg' | resize({ width: 300, height: 300 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-008.jpg' | resize({ width: 300, height: 300 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-008.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-008.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" alt="Toddler engaging in independent play in the classroom." width="300" height="300" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-bottom">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-009.jpg' | resize({ width: 300, height: 342 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-009.jpg' | resize({ width: 300, height: 342 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-009.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-009.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" alt="Toddlers exploring counting beads during guided learning." width="300" height="342" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-tall">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 300, height: 662 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 300, height: 662 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" alt="Child smiling during a positive toddler classroom moment." width="300" height="662" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                program-highlights                -->
+    <!-- ============================================ -->
+    <section id="program-highlights" class="cs-section">
+        <div class="cs-container animate">
+            <span class="cs-topper">Program Details</span>
+            <h2 class="cs-title">What Your Toddler Will Experience Every Day</h2>
+            <p class="cs-text">Our toddler classrooms are active, cheerful spaces where children are encouraged to explore, create, and connect. Using the Creative Curriculum as our foundation, teachers plan intentional daily activities that support all areas of toddler development, from vocabulary growth and early number sense to coordination, independence, and emotional regulation. Small group activities, circle time, outdoor play, and hands-on art are woven throughout every day to make learning feel natural and fun.</p>
+            <div class="cs-card-group">
+                <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn and rocket" width="427" height="279">
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-language-chat.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Language &amp; Communication Development</h3>
+                    <p class="cs-text">At this age, language is exploding, and we're here for every new word. Our teachers engage toddlers in rich conversation, storytime, songs, and vocabulary-building activities that accelerate language growth and communication confidence.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-responsive-care.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Social Skills &amp; Emotional Growth</h3>
+                    <p class="cs-text">Learning to share, take turns, and express feelings are some of the most important toddler milestones. Our team uses Love and Logic strategies to guide social interactions with patience and positivity, helping children build healthy emotional habits early.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-ball-movement.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Movement &amp; Physical Development</h3>
+                    <p class="cs-text">Toddlers need to move, a lot. Our program includes structured gross motor activities, outdoor play time, and an indoor movement area where children can run, climb, and develop coordination in a safe, supervised environment.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-sensory-play.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Play-Based Learning With Creative Curriculum</h3>
+                    <p class="cs-text">Everything in our toddler program is grounded in the Creative Curriculum framework, which ensures that play is purposeful. Every activity, from sensory bins to block play, is intentionally planned to build real developmental skills.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-language-chat.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Bilingual Environment</h3>
+                    <p class="cs-text">Our bilingual approach introduces toddlers to a second language naturally through songs, stories, and daily conversations, giving children an early cognitive advantage and celebrating the cultural diversity of our Lakewood community.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  program-details             -->
+    <!-- ============================================ -->
+    <section id="program-details" class="cs-section">
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray-big.svg" alt="bear" width="450" height="500">    
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <span class="cs-topper">What to Expect</span>
+                <h2 class="cs-title">A Typical Toddler Day at Just Like Home</h2>
+                <p class="cs-text">Every morning begins with a warm welcome and a smooth transition into the classroom routine. Toddlers enjoy a blend of structured group activities, free play, outdoor time, meals, and rest, all balanced with the nurturing teacher interaction that makes learning meaningful. At the end of the day, parents receive real-time updates through the Kid Reports app, including photos, activities, and notes from their child's teachers.</p>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="Toddlers building early math skills with hands-on manipulatives." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    {{cta("Watch Your Toddler Grow in a Place That Feels Just Like Home", "Schedule a tour at any of our four Lakewood campuses, we'd love to meet your little one.", "Schedule a Tour", "/schedule-a-tour/", "Contact Us", "/contact-us/")}}
+
+{% endblock %}

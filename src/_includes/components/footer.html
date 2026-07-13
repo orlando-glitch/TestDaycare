@@ -1,0 +1,89 @@
+<!-- ============================================ -->
+<!--                 FOOTER                       -->
+<!-- ============================================ -->
+<footer id="footer">
+    <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+
+    <div class="container">
+        <div class="content">
+            <div class="top-footer">
+                <a href="/" aria-label="back to home">
+                    <img class="footer-logo" src="{% getUrl '/assets/images/logo-new.png' | resize({ width: 128 }) | avif({ quality: 50, effort: 6 }) %}" alt="{{client.name}} logo" loading="lazy" decoding="async" width="300" height="140" data-img2picture-ignore>
+                </a>
+                <p class="brand-copy">Quality child care in Lakewood, WA for infants through school-age children, with trusted teachers and flexible weekday coverage for working families.</p>
+            </div>
+
+            <div class="footer-column">
+                <ul>
+                    <li><h2>Quick Links</h2></li>
+                    <li><a href="/" class="hover-highlight">Home</a></li>
+                    <li><a href="/about/our-story/" class="hover-highlight">About Us</a></li>
+                    <li><a href="/about/careers/" class="hover-highlight">Careers</a></li>
+                    <li><a href="/about/curriculum/" class="hover-highlight">Curriculum</a></li>
+                    <li><a href="/contact-us/" class="hover-highlight">Contact Us</a></li>
+                    <li><a href="/enrollment/" class="hover-highlight">How to Enroll</a></li>
+                    <li><a href="/financial-assistance/" class="hover-highlight">Financial Assistance</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul>
+                    <li><h2>Locations</h2></li>
+                    <li><a href="/locations/douglas-street-campus/" class="hover-highlight">7606 Douglas St Campus</a></li>
+                    <li><a href="/locations/custer-7513-campus/" class="hover-highlight">Custer 7513 Campus</a></li>
+                    <li><a href="/locations/custer-7511-campus/" class="hover-highlight">Custer 7511 Campus</a></li>
+                    <li><a href="/locations/custer-7507-campus/" class="hover-highlight">Custer 7507 Campus</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul>
+                    <li><h2>Programs</h2></li>
+                    <li><a href="/programs/infant-care/" class="hover-highlight">Infant Care</a></li>
+                    <li><a href="/programs/toddler-program/" class="hover-highlight">Toddler Program</a></li>
+                    <li><a href="/programs/preschool/" class="hover-highlight">Preschool</a></li>
+                    <li><a href="/programs/school-age-care/" class="hover-highlight">School-Age Care</a></li>
+                    <li><a href="/programs/flexible-hours-child-care/" class="hover-highlight">Flexible Hours Child Care</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul class="hours-list">
+                    <li><h2>Contact Details</h2></li>
+                    <li class="contact-v2">
+                        <a href="mailto:{{client.email}}">
+                            <img loading="lazy" aria-hidden="true" decoding="async" src="/assets/svgs/mail.svg" alt="mail icon" width="48" height="48" data-img2picture-ignore>
+                            <div class="hover-highlight">{{client.email}}</div>
+                        </a>
+                    </li>
+                    <li class="contact-v2">
+                        <a href="tel:{{client.phoneForTel}}">
+                            <img loading="lazy" aria-hidden="true" decoding="async" src="/assets/svgs/phone.svg" alt="phone icon" width="48" height="48" data-img2picture-ignore>
+                            <span class="hover-highlight">{{client.phoneFormatted}}</span>
+                        </a>
+                    </li>
+                    {% if client.hours %}
+                        <li class="hours">
+                            <span class="hours-time">
+                                {{client.hours}}
+                            </span>
+                        </li>
+                    {% endif %}
+                    <li><a href="/schedule-a-tour/" class="button-solid primary">Schedule a Tour</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="credit">
+            <span>
+                © <span id="current-year"></span> {{client.name}} - Designed & Developed by
+                <a href="https://childcarewebdesign.com/" class="hover-highlight" target="_blank" rel="noopener noreferrer">Child Care Web Design</a>
+            </span>
+            <br>
+            <span>
+                <a href="/privacy-policy/" class="hover-highlight" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                | <a href="/terms-of-service/" class="hover-highlight" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+            </span>
+        </div>
+    </div>
+</footer>

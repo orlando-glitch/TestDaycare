@@ -1,0 +1,184 @@
+---
+title: 'Terms Of Service'
+description: 'Terms Of Service'
+preloadImg: ''
+permalink: 'terms-of-service/'
+eleventyExcludeFromCollections: true
+---
+
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.75; color: #1a1a1a; background: #fafaf8; padding: 2rem 1rem 4rem; }
+    .container { max-width: 760px; margin: 0 auto; background: #fff; border: 1px solid #e4e4dc; border-radius: 4px; padding: 3rem 3.5rem; }
+    .doc-label { font-family: 'Courier New', monospace; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #888; margin-bottom: 0.5rem; }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.4rem; color: #111; }
+    .last-updated { font-size: 0.82rem; color: #888; font-style: italic; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e4e4dc; }
+    h2 { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #111; margin: 2.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; color: #333; }
+    ol, ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.4rem; color: #333; }
+    .allcaps { font-size: 0.88rem; line-height: 1.6; }
+    a { color: #1a4a8a; text-decoration: underline; }
+    .contact-block { background: #f7f7f5; border-left: 3px solid #ccc; padding: 1rem 1.25rem; margin: 1rem 0; line-height: 1.8; color: #1a1a1a; }
+    .contact-block a { color: #1a4a8a; }
+    .sms-example { background: #f0f4f8; border: 1px solid #d8e2ec; border-radius: 4px; padding: 1rem 1.25rem; margin: 0.5rem 0 1.25rem; font-size: 0.9rem; color: #1a1a1a; }
+    .sms-example p { margin-bottom: 0.5rem; color: #1a1a1a; }
+    .sms-example p:last-child { margin-bottom: 0; }
+    @media (max-width: 600px) { .container { padding: 2rem 1.25rem; } }
+  </style>
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+  <p class="doc-label">Legal</p>
+  <h1>Terms of Service</h1>
+  <p class="last-updated">Last updated: Feb 06, 2026</p>
+
+  <p>Please read this Terms of Service ("Terms", "Terms of Service") carefully before using the <a href="{{ client.domain }}">{{ client.domain }}</a> website (the "Website") operated by {{ client.name }} ("us", "we", "our") as this Terms of Service contains important information regarding limitations of our liability. Your access to and use of this Website is conditional upon your acceptance of and compliance with these Terms. These Terms apply to everyone, including but not limited to visitors, users and others, who wish to access and use the Website.</p>
+
+  <p>By accessing or using the Website, you agree to be bound by these Terms. If you disagree with any part of the Terms, then you do not have our permission to access or use the Website.</p>
+
+  <h2>Eligibility</h2>
+  <p>You must be at least 18 years old to use this Website. By using the Website, you represent and warrant that you meet this requirement. If you are using the Website on behalf of an organization, you represent that you are authorized to bind that organization to these Terms.</p>
+
+  <h2>Prohibited Uses</h2>
+  <p>You agree that you will use this Website in accordance with all applicable laws, rules, regulations and these Terms at all times. The following is a non-exhaustive list of prohibited uses of this Website. You agree that you will not perform any of the following prohibited uses:</p>
+  <ol>
+    <li>Impersonating or attempting to impersonate {{ client.name }} or its employees, representatives, subsidiaries or divisions;</li>
+    <li>Misrepresenting your identity or affiliation with any person or entity;</li>
+    <li>Sending or attempting to send any advertising or promotional material, including but not limited to spam, junk mail, chain mail or any similar material;</li>
+    <li>Engaging in any conduct that restricts or inhibits any person's use or enjoyment of the Website, or which, as determined in our sole discretion, may harm us or the users of this Website or expose us or other users to liability;</li>
+    <li>Using the Website in any manner that could disable, overburden, damage or impair the Website or interfere with another party's use of the Website;</li>
+    <li>Using any robot, spider or other similar automatic technology, process or means to access or use the Website for any purpose, including monitoring or copying any of the material on this Website;</li>
+    <li>Using any manual process or means to monitor or copy any of the material on this Website or for any other unauthorized purpose;</li>
+    <li>Using any device, software, means or routine that interferes with the proper working of the Website, including but not limited to viruses, trojan horses, worms, logic bombs or other such materials;</li>
+    <li>Attempting to gain unauthorized access to, interfering with, damaging or disrupting any parts of the Website, the server(s) on which the Website is stored, or any server, computer or database connected to the Website;</li>
+    <li>Attempting to attack or attacking the Website via a denial-of-service attack or a distributed denial-of-service attack;</li>
+    <li>Otherwise attempting to interfere with the proper working of the Website;</li>
+    <li>Using the Website in any way that violates any applicable federal, state or local laws, rules or regulations.</li>
+  </ol>
+
+  <h2>User Content</h2>
+  <p>If the Website allows you to submit or post content, you retain any rights you may have in your content, but you grant us a worldwide, royalty-free, non-exclusive, perpetual license to use, copy, modify, adapt, distribute, and display such content on the Website or in marketing materials. You represent that your content does not infringe any third party's rights.</p>
+
+  <h2>Termination</h2>
+  <p>We reserve the right to terminate or suspend your access to the Website immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms.</p>
+
+  <h2>Indemnification</h2>
+  <p>You agree to indemnify, defend, and hold harmless {{ client.name }} and its affiliates, officers, agents, employees, and partners from and against any claim, liability, loss, damage, cost, or expense (including legal fees) arising out of or related to your use of the Website or violation of these Terms.</p>
+
+  <h2>No Warranty on Website</h2>
+  <p class="allcaps">THIS WEBSITE IS PROVIDED "AS IS". NO WARRANTY, EXPRESS OR IMPLIED (INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, OF SATISFACTORY QUALITY OR FITNESS FOR A PARTICULAR PURPOSE OR USE) SHALL APPLY TO THIS WEBSITE, WHETHER ARISING BY LAW, COURSE OF DEALING, COURSE OF PERFORMANCE, USAGE OF TRADE OR OTHERWISE.</p>
+
+  <h2>Availability, Errors and Inaccuracies</h2>
+  <p>We assume no liability for the availability, errors or inaccuracies of the information or services described on this Website. We may experience delays in updating information on this Website. The information and descriptions of services found on the Website may contain errors or inaccuracies or may not be complete or current. We expressly reserve the right to correct any errors on our Website at any time. Nothing on this Website constitutes a guarantee of enrollment availability, program placement, or specific service outcomes.</p>
+
+  <h2>Damages and Limitation of Liability</h2>
+  <p class="allcaps">IN NO EVENT SHALL {{ client.name | upper }} BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF, RELATING TO OR IN ANY WAY CONNECTED WITH YOUR ACCESS TO, DISPLAY OF OR USE OF THIS WEBSITE OR WITH THE DELAY OR INABILITY TO ACCESS, DISPLAY OR USE THIS WEBSITE, INCLUDING BUT NOT LIMITED TO YOUR RELIANCE UPON OPINIONS OR INFORMATION APPEARING ON THIS WEBSITE; ANY COMPUTER VIRUSES, INFORMATION, SOFTWARE, LINKED WEBSITES OPERATED BY THIRD PARTIES, PRODUCTS OR SERVICES OBTAINED THROUGH THIS WEBSITE, WHETHER BASED ON A THEORY OF NEGLIGENCE, CONTRACT, TORT, STRICT LIABILITY, CONSUMER PROTECTION STATUTES OR OTHERWISE, EVEN IF {{ client.name | upper }} HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+  <p class="allcaps">THE AGGREGATE LIABILITY OF {{ client.name | upper }} ARISING OUT OF OR RELATING TO THIS WEBSITE, WHETHER ARISING OUT OF OR RELATED TO BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE SHALL BE LIMITED TO THE AMOUNT OF FEES ACTUALLY RECEIVED BY {{ client.name | upper }} FROM YOU.</p>
+  <p class="allcaps">THIS LIMITATION OF LIABILITY REFLECTS THE ALLOCATION OF RISK BETWEEN YOU AND US. THE LIMITATIONS SPECIFIED IN THIS SECTION WILL SURVIVE AND APPLY EVEN IF ANY LIMITED REMEDY SPECIFIED IN THESE TERMS OF USE IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. THE LIMITATIONS OF LIABILITY PROVIDED IN THESE TERMS OF USE INURE TO THE BENEFIT OF {{ client.name | upper }}.</p>
+
+  <h2>Links to Third Party Websites</h2>
+  <p>This Website may contain hyperlinks to websites operated by third parties and not by us. We provide such hyperlinks for your reference only. We do not control such websites and are not responsible for their contents or the privacy or other practices of such websites. Further, it is your responsibility to take precautions to ensure that whatever links you click on or software that you download, whether from this Website or other websites or applications, is free of such items as viruses, worms, trojan horses, defects and other items of a destructive nature. Our inclusion of hyperlinks to such websites does not imply any endorsement of the material on such websites or any association with their operators.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>Our Website may utilize or be integrated with third-party tools or platforms (such as scheduling tools, payment processors, analytics providers, or marketing platforms). Your use of those services is subject to their respective terms and privacy policies. We are not responsible for the content or practices of any third-party services.</p>
+
+  <h2>SMS Messaging</h2>
+  <p>If you opt in to receiving SMS messages from us, we will send you conversational, informational, and promotional messages. Our SMS program can be described as follows: We send SMS messages only to contacts who have explicitly opted in through our website forms or booking system. SMS messages are used strictly for transactional and service-related communication, including:</p>
+  <ul>
+    <li>Appointment and tour confirmations</li>
+    <li>Appointment reminders and follow-ups</li>
+    <li>Reschedule or cancellation assistance</li>
+    <li>Review requests after a completed visit or service</li>
+  </ul>
+  <p>Messages are not sent in bulk without consent, are relevant to the contact's interaction with our business, and always include an option to opt out by replying STOP.</p>
+
+  <p><strong>Example SMS Messages</strong></p>
+
+  <p><strong>Tour / Appointment Confirmation:</strong></p>
+  <div class="sms-example">
+    <p>Hi {% raw %}{{contact.first_name}}{% endraw %},</p>
+    <p>Your tour of {{ client.name }} has been confirmed for {% raw %}{{appointment.only_start_date}}{% endraw %} at {% raw %}{{appointment.only_start_time}}{% endraw %} at {% raw %}{{contact.location}}{% endraw %}.</p>
+    <p>If you need to reschedule or cancel your tour, please use the links below:<br>
+    Reschedule: {% raw %}{{appointment.reschedule_link}}{% endraw %}<br>
+    Cancel: {% raw %}{{appointment.cancellation_link}}{% endraw %}</p>
+  </div>
+
+  <p><strong>Appointment Reminder:</strong></p>
+  <div class="sms-example">
+    <p>Hi {% raw %}{{contact.first_name}}{% endraw %},<br>
+    Just a friendly reminder that your tour of {{ client.name }} is tomorrow at {% raw %}{{appointment.only_start_time}}{% endraw %} {% raw %}{{appointment.timezone}}{% endraw %} at {% raw %}{{contact.location}}{% endraw %}.</p>
+    <p>If you have any questions in the meantime, please call us at {{ client.phoneFormatted }}. We look forward to meeting you!</p>
+  </div>
+
+  <p><strong>Review Request:</strong></p>
+  <div class="sms-example">
+    <p>Hey {% raw %}{{contact.first_name}}{% endraw %}, it's {{ client.ownerFirstName }} from {{ client.name }} — it's been such a pleasure serving you!</p>
+    <p>Recently we are trying to boost our online presence. If you could take a moment to leave a review, I would greatly appreciate it. It might seem small, but it plays a huge role in building trust with other customers and helps our company continue to grow.</p>
+    <p>Please share your thoughts here: {% raw %}{{review_url}}{% endraw %}</p>
+    <p>Thank you so much, {% raw %}{{contact.first_name}}{% endraw %}.</p>
+  </div>
+
+  <p><strong>Support / Question:</strong></p>
+  <div class="sms-example">
+    <p>Hi {% raw %}{{contact.first_name}}{% endraw %},<br>
+    Thanks for reaching out to {{ client.name }}.</p>
+    <p>If you have any questions about your tour or appointment, you may reply to this message or call us at {{ client.phoneFormatted }}.</p>
+    <p>Reply STOP to opt out.</p>
+  </div>
+
+  <p>By opting into SMS messaging from {{ client.name }}, you confirm that you are authorized to receive messages on the provided number and that you have given explicit consent. Consent may be obtained via our website, booking system, paper forms, or verbal agreement through customer service.</p>
+  <p>Message frequency depends on your activity with our services. You may receive up to 3 messages per interaction. Message and data rates may apply, depending on your carrier and plan. We strive to ensure timely delivery but do not guarantee it due to potential delays from carriers, network congestion, or device issues.</p>
+  <p>You may opt out at any time by replying "STOP" to any message, or emailing <a href="mailto:{{ client.email }}">{{ client.email }}</a>. For help, reply "HELP" or contact us directly. If you would like to re-subscribe, you can do so by re-enrolling through the website.</p>
+  <p>You agree not to use our messaging services for any illegal, harassing, or unauthorized activity. Your use of our SMS services must comply with all applicable laws including those related to privacy, telecommunications, and commercial messages.</p>
+  <p>For additional information regarding SMS messaging and your privacy, please read our Privacy Policy: <a href="{{ client.domain }}/privacy-policy/">{{ client.domain }}/privacy-policy/</a>.</p>
+
+  <h2>Intellectual Property and DMCA Notice</h2>
+  <p>All contents of this Website are &copy; {{ client.name }} or third parties. All rights reserved. Unless specified otherwise, this Website and all content and other materials on this Website including but not limited to all logos, designs, text, graphics, pictures, information, data, software, sound files and arrangement thereof (collectively, "Content") are the proprietary property of {{ client.name }} and are either registered trademarks, trademarks or otherwise protected intellectual property of {{ client.name }} or third parties in the United States and/or other countries.</p>
+  <p>If you are aware of a potential infringement of our intellectual property, please contact {{ client.name }} at <a href="mailto:{{ client.email }}">{{ client.email }}</a>.</p>
+  <p>We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on the Website infringes on the copyright, trademark or other intellectual property rights of any person or entity.</p>
+  <p>If you believe in good faith that the Content infringes on your intellectual property rights, you or your agent may send us a written notice of such infringement titled "Infringement of Intellectual Property Rights - DMCA." Your notice to us must include the following information:</p>
+  <ol>
+    <li>An electronic or physical signature of the person authorized to act on behalf of the owner of the intellectual property right's interest;</li>
+    <li>A description of the work that you claim has been infringed, including the URL (i.e., web page address) of the location where the work exists or a copy of the work;</li>
+    <li>Your name, email, address and telephone number; and</li>
+    <li>A statement by you that you have a good faith belief that the disputed use is not authorized by the owner of the work, its agent or the law.</li>
+  </ol>
+  <p>Please note that we will not process your complaint if it is not properly filled out or is incomplete. You may be held accountable for damages, including but not limited to costs and attorneys' fees for any misrepresentation or bad faith claims regarding the infringement of your intellectual property rights by the Content on this Website.</p>
+  <p>You may submit your claim to us by contacting us at:</p>
+  <div class="contact-block">
+    {{ client.name }}<br>
+    <a href="mailto:{{ client.email }}">{{ client.email }}</a><br>
+    <a href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a><br>
+    {{ client.address.lineOne }}, {{ client.address.city }}, {{ client.address.state }} {{ client.address.zip }}
+  </div>
+
+  <h2>Governing Law, Severability, Dispute Resolution, Venue and Class Action Waiver</h2>
+  <p>These Terms shall be governed and construed in accordance with the laws of the state of {{ client.address.state }}, United States, without regard to its conflict of laws provisions. THESE TERMS SHALL NOT BE GOVERNED BY THE UNITED NATIONS CONVENTION ON CONTRACTS FOR THE SALE OF INTERNATIONAL GOODS, THE UNIFORM COMMERCIAL CODE, NOR INCOTERMS.</p>
+  <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of that right or provision. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between you and us regarding our Website, and supersede and replace any prior agreements we might have had with you regarding the Website.</p>
+  <p>Any controversy or claim arising out of or relating to these Terms including but not limited to the interpretation or breach thereof shall be resolved in a court of competent jurisdiction in {{ client.address.state }}, United States.</p>
+  <p class="allcaps">YOU AND {{ client.name | upper }} AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY CLASS OR REPRESENTATIVE ACTION.</p>
+
+  <h2>Photographs and Media</h2>
+  <p>This Website may display photographs of our facility, staff, and activities. Some images may be stock photography used for illustrative purposes only. Any photographs depicting children were taken and published with the express written consent of their parent or legal guardian. You may not download, copy, or redistribute any images from this Website without our prior written permission.</p>
+
+  <h2>Enrollment and Registration</h2>
+  <p>Submitting a contact form, scheduling a tour, or completing an enrollment inquiry through this Website does not guarantee acceptance, enrollment, or placement in any program. All enrollments are subject to availability, completion of required documentation, and approval by {{ client.name }}. We reserve the right to decline enrollment at our sole discretion.</p>
+
+  <h2>Accessibility</h2>
+  <p>{{ client.name }} is committed to ensuring that this Website is accessible to all users, including those with disabilities. We strive to conform to Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards. If you experience any difficulty accessing any part of this Website, please contact us at <a href="mailto:{{ client.email }}">{{ client.email }}</a> and we will work to provide the information you need.</p>
+
+  <h2>Changes to Terms of Service</h2>
+  <p>We reserve the right to make changes to these Terms of Service at any time. We will notify you of changes by posting the updated Terms of Service to this Website. Your continued use of the Website after changes are posted constitutes your acceptance of the revised Terms.</p>
+
+  <h2>Questions</h2>
+  <p>If you have any questions about our Terms of Service, please contact us at <a href="mailto:{{ client.email }}">{{ client.email }}</a>.</p>
+</div>
+
+    {% endblock %}

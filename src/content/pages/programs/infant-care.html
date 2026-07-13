@@ -1,0 +1,143 @@
+---
+title: "Infant Daycare in Lakewood, WA | Just Like Home Daycare Center"
+description: "Trusted infant daycare in Lakewood, WA for babies 1 to 11 months. Open Mon to Fri 5:30 AM to midnight. Loving, attentive care with consistent routines. DSHS subsidies accepted."
+preloadImg: ""
+permalink: 'programs/infant-care/'
+eleventyNavigation:
+    key: Infant Care (1 - 11 months)
+    order: 301
+    parent: Programs
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/programs.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Infant Daycare in Lakewood, WA", "Care for Babies 1 to 11 Months")}}
+
+    <!-- ============================================ -->
+    <!--                program-sbs               -->
+    <!-- ============================================ -->
+    <section id="program-sbs" class="cs-section">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Program Overview</span>
+                <h2 class="cs-hero-title">Nurturing Infant Care Designed Around Your Baby's Needs</h2>
+                <p class="cs-text">Leaving your baby in someone else's care is one of the biggest leaps of trust a parent makes, and we don't take that lightly. At Just Like Home Daycare Center, our infant program serves babies ages 1 to 11 months with attentive, individualized care built around consistent routines. Our trained caregivers mirror your home schedule as closely as possible, so your baby always feels secure. Open Monday through Friday from 5:30 AM to midnight, we're one of the only infant daycare options in Lakewood equipped for families with non-traditional work hours.</p>
+                <a href="/schedule-a-tour/" class="button-solid">Schedule a Tour</a>
+            </div>
+            <div class="sbs-image">
+                <img class="cs-sun" decoding="async" src="/assets/images/sun.png" alt="sun" width="210" height="200">
+                <img class="cs-star" decoding="async" src="/assets/images/shooting-star.png" alt="star" width="274" height="193">
+                <picture class="cs-picture cs-picture-top">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-019.jpg' | resize({ width: 300, height: 300 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-019.jpg' | resize({ width: 300, height: 300 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-019.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-019.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" alt="Infant exploring blocks during supervised floor play." width="300" height="300" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-bottom">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 300, height: 342 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 300, height: 342 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" alt="Caregiver reading with young children during classroom time." width="300" height="342" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-tall">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-031.jpg' | resize({ width: 300, height: 662 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-031.jpg' | resize({ width: 300, height: 662 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-031.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-031.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" alt="Young child stacking blocks to build fine motor skills." width="300" height="662" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                program-highlights                -->
+    <!-- ============================================ -->
+    <section id="program-highlights" class="cs-section">
+        <div class="cs-container animate">
+            <span class="cs-topper">Program Details</span>
+            <h2 class="cs-title">What Makes Our Infant Program Special</h2>
+            <p class="cs-text">Our infant rooms are calm, safe, and purposefully designed for babies at the earliest stage of development. Small group sizes mean each baby receives the close attention they need, while our caregivers are trained to respond to every cue, from hunger and sleep signals to the need for comfort and connection. We use age-appropriate sensory materials, soft music, and responsive interaction to stimulate development gently and naturally. Parents receive daily updates through the Kid Reports app, so you always know how your little one is doing throughout the day.</p>
+            <div class="cs-card-group">
+                <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn and rocket" width="427" height="279">
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-responsive-care.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Consistent, Responsive Caregiving</h3>
+                    <p class="cs-text">Our infant caregivers build real bonds with each baby. By maintaining consistent routines and responding promptly to every need, we help infants develop the sense of safety and trust that is foundational to all future growth.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-sensory-play.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Developmentally Appropriate Stimulation</h3>
+                    <p class="cs-text">From tummy time and sensory play to gentle music and visual exploration, every activity in our infant room is intentionally designed to support brain development, motor growth, and early social connection.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-parent-updates.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Parent Communication Through Kid Reports</h3>
+                    <p class="cs-text">We use the Kid Reports app to keep parents informed throughout the day, including feeding times, diaper changes, nap logs, photos, and milestone moments. You're always connected, even when you're not here.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-flex-hours.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Flexible Scheduling for Working Families</h3>
+                    <p class="cs-text">Our 5:30 AM to midnight hours mean we can serve parents who work early shifts, late shifts, or non-traditional schedules, something very few infant daycare providers in Lakewood are equipped to offer.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-subsidy-support.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">DSHS, Tribal and Military Subsidies Accepted</h3>
+                    <p class="cs-text">Over 98% of our enrolled families receive financial assistance. We accept WCCC through DSHS, Tribal subsidy, and Military Childcare Aware, and we'll help guide you through the enrollment process step by step.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  program-details             -->
+    <!-- ============================================ -->
+    <section id="program-details" class="cs-section">
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray-big.svg" alt="bear" width="450" height="500">    
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <span class="cs-topper">What to Expect</span>
+                <h2 class="cs-title">A Typical Day for Your Infant at Just Like Home</h2>
+                <p class="cs-text">Every day in our infant program begins with a warm welcome. Your baby's personal schedule, including feeding, napping, and playtime, is followed closely by our team. Throughout the day, infants engage in age-appropriate sensory activities, receive plenty of holding and interaction, and rest in a safe, monitored sleep environment. At pickup, you'll receive a full daily summary through the Kid Reports app covering feedings, diapers, sleep, activities, and any special moments worth sharing.</p>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-022.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-022.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-022.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-022.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-022.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-022.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-022.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="Infant practicing movement and sensory play in a safe classroom." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    {{cta("Give Your Baby the Loving Start They Deserve in Lakewood", "Call (253) 302-3904 or schedule a tour of our infant program. We would love to meet your family and answer every question.", "Schedule a Tour", "/schedule-a-tour/", "Contact Us", "/contact-us/")}}
+
+{% endblock %}

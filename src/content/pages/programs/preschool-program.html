@@ -1,0 +1,144 @@
+---
+title: "Preschool in Lakewood, WA | Just Like Home Daycare Center"
+description: "Play-based preschool in Lakewood, WA for ages 3 to 5. Creative Curriculum, bilingual environment & kindergarten readiness. Open 5:30 AM to midnight. DSHS accepted."
+preloadImg: ""
+permalink: 'programs/preschool/'
+eleventyNavigation:
+    key: Preschool (3 - 5 years)
+    order: 303
+    parent: Programs
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/programs.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Preschool in Lakewood, WA", "Creative Curriculum, Ages 3 to 5")}}
+
+    <!-- ============================================ -->
+    <!--                program-sbs               -->
+    <!-- ============================================ -->
+    <section id="program-sbs" class="cs-section">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Program Overview</span>
+                <h2 class="cs-hero-title">A Preschool Program That Prepares the Whole Child</h2>
+                <p class="cs-text">At Just Like Home Daycare Center, our preschool program gives children ages 3 to 5 the academic foundations, social skills, and emotional confidence they need for kindergarten and beyond. Built on the Creative Curriculum framework, our classrooms blend structured learning with joyful, imaginative play, because children learn best when they're truly engaged. Our four Lakewood campuses are open Monday through Friday from 5:30 AM to midnight, so working families never have to choose between quality preschool and a flexible schedule.</p>
+                <p class="cs-text">Free preschool may be available for families who qualify through ECEAP. Learn more on our <a class="text-link" href="/financial-assistance/">available subsidies</a> page.</p>
+                <a href="/schedule-a-tour/" class="button-solid">Schedule a Tour</a>
+            </div>
+            <div class="sbs-image">
+                <img class="cs-sun" decoding="async" src="/assets/images/sun.png" alt="sun" width="210" height="200">
+                <img class="cs-star" decoding="async" src="/assets/images/shooting-star.png" alt="star" width="274" height="193">
+                <picture class="cs-picture cs-picture-top">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 300, height: 300 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 300, height: 300 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" alt="Preschool children working together on drawing activities." width="300" height="300" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-bottom">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-017.jpg' | resize({ width: 300, height: 342 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-017.jpg' | resize({ width: 300, height: 342 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-017.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-017.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" alt="Preschoolers painting and creating art during class." width="300" height="342" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-tall">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" alt="Preschool child smiling during group classroom time." width="300" height="662" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                program-highlights                -->
+    <!-- ============================================ -->
+    <section id="program-highlights" class="cs-section">
+        <div class="cs-container animate">
+            <span class="cs-topper">Our Preschool Approach</span>
+            <h2 class="cs-title">Learning That Sparks Curiosity and Builds Confidence</h2>
+            <p class="cs-text">Our preschool classrooms are thoughtfully designed spaces where children are encouraged to explore, ask questions, and make discoveries. Teachers serve as guides, facilitating learning through hands-on projects, group activities, and meaningful one-on-one interactions. We focus on the whole child: intellectual growth, social-emotional development, physical skills, and creative expression all have a place in our daily program.</p>
+            <div class="cs-card-group">
+                <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn and rocket" width="427" height="279">
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-academic-support.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Creative Curriculum Foundation</h3>
+                    <p class="cs-text">The Creative Curriculum provides our teachers with a research-backed framework for planning intentional learning experiences. From literacy and math to science and social studies, every lesson connects to real developmental goals in an age-appropriate, play-rich way.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-academic-support.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Kindergarten Readiness</h3>
+                    <p class="cs-text">By the time children leave our preschool program, they have a strong foundation in early literacy, number sense, fine motor skills, and classroom behaviors like listening, following directions, and cooperating with peers.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-language-chat.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Bilingual Learning Environment</h3>
+                    <p class="cs-text">Our bilingual approach introduces preschoolers to a second language through storytelling, music, and daily conversation, building early language skills while celebrating the diversity of our Lakewood families.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-responsive-care.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Social-Emotional Development With Love and Logic</h3>
+                    <p class="cs-text">Using Love and Logic strategies, our teachers help preschoolers navigate friendships, manage emotions, and develop the empathy and self-regulation skills that set the tone for lifelong social success.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-sensory-play.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Math, Science &amp; Creative Arts</h3>
+                    <p class="cs-text">Preschoolers at Just Like Home explore math through counting games and patterns, science through hands-on experiments, and art through open-ended creative projects, all woven naturally into the daily routine.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  program-details             -->
+    <!-- ============================================ -->
+    <section id="program-details" class="cs-section">
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray-big.svg" alt="bear" width="450" height="500">    
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <span class="cs-topper">What Families Can Expect</span>
+                <h2 class="cs-title">What Your Preschooler's Day Looks Like</h2>
+                <p class="cs-text">Each day begins with a structured morning circle that sets the tone for learning. Children rotate through teacher-led small groups, independent exploration centers, outdoor play, meals, and rest time, all carefully balanced to support focus and energy levels throughout the day. Parents stay connected through the Kid Reports app, which delivers daily photos, learning updates, and teacher notes directly to your phone.</p>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-142.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-142.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-142.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-142.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-142.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-142.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-142.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="Preschool children exploring color through hands-on painting." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    {{cta("Give Your Child the Best Preschool Start in Lakewood", "Schedule a tour today and see our preschool classrooms firsthand, your child will love it here.", "Schedule a Tour", "/schedule-a-tour/", "Contact Us", "/contact-us/")}}
+
+{% endblock %}

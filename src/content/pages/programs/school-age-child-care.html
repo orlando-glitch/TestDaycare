@@ -1,0 +1,143 @@
+---
+title: "Before & After School Care in Lakewood, WA | Just Like Home"
+description: "Before & after school care in Lakewood, WA for ages 6 to 13. Open 5:30 AM to midnight Mon to Fri. Homework help, enrichment activities & extended hours. DSHS accepted."
+preloadImg: ""
+permalink: 'programs/school-age-care/'
+eleventyNavigation:
+    key: School-Age Care (6 - 13 years)
+    order: 305
+    parent: Programs
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/programs.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Before & After School Care in Lakewood, WA", "Ages 6 to 13")}}
+
+    <!-- ============================================ -->
+    <!--                program-sbs               -->
+    <!-- ============================================ -->
+    <section id="program-sbs" class="cs-section">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Program Overview</span>
+                <h2 class="cs-hero-title">Reliable Before &amp; After School Care Built for Working Families</h2>
+                <p class="cs-text">Finding dependable care for school-age children can be just as challenging as finding infant or toddler care, especially when your workday doesn't align with school dismissal times. At Just Like Home Daycare Center, our school-age program in Lakewood, WA serves children ages 6 through 13 with structured, engaging care before school starting at 5:30 AM and after school until midnight, Monday through Friday. Whether your child needs morning drop-off before the bus, after-school coverage, or care during school breaks and non-school days, we're here to support your family.</p>
+                <a href="/enrollment/" class="button-solid">Learn About Enrollment</a>
+            </div>
+            <div class="sbs-image">
+                <img class="cs-sun" decoding="async" src="/assets/images/sun.png" alt="sun" width="210" height="200">
+                <img class="cs-star" decoding="async" src="/assets/images/shooting-star.png" alt="star" width="274" height="193">
+                <picture class="cs-picture cs-picture-top">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-004.jpg' | resize({ width: 300, height: 300 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-004.jpg' | resize({ width: 300, height: 300 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-004.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-004.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" alt="School-age children focused on writing and classroom work." width="300" height="300" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-bottom">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-015.jpg' | resize({ width: 300, height: 342 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-015.jpg' | resize({ width: 300, height: 342 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-015.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-015.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" alt="School-age children building friendships during group time." width="300" height="342" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-tall">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-021.jpg' | resize({ width: 300, height: 662 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-021.jpg' | resize({ width: 300, height: 662 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-021.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-021.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" alt="School-age child participating in a music activity." width="300" height="662" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                program-highlights                -->
+    <!-- ============================================ -->
+    <section id="program-highlights" class="cs-section">
+        <div class="cs-container animate">
+            <span class="cs-topper">Program Details</span>
+            <h2 class="cs-title">School-Age Care That's More Than Just Supervision</h2>
+            <p class="cs-text">We believe after-school time should be productive, enriching, and, just as important, fun. Our school-age program is built around the idea that older children still need a safe, supportive environment where they can decompress, get their homework done, and engage with caring adults and peers. Our staff know each child by name and take a genuine interest in their growth, challenges, and interests.</p>
+            <div class="cs-card-group">
+                <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn and rocket" width="427" height="279">
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-academic-support.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Homework Help &amp; Academic Support</h3>
+                    <p class="cs-text">Each afternoon, children have dedicated time to work on homework and school assignments with staff support available. We create a quiet, focused environment so kids can get their work done before heading home for the evening.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-sensory-play.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Enrichment Activities &amp; Creative Play</h3>
+                    <p class="cs-text">After homework, children enjoy a variety of enrichment options, from art projects and STEM activities to music, movement, and team games. Our program keeps older kids engaged, active, and social every day after school.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-flex-hours.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Early Morning Care from 5:30 AM</h3>
+                    <p class="cs-text">Need to drop off before the school bus comes? We open at 5:30 AM every weekday, giving parents with early shifts a trusted, safe place for their school-age children before the day even begins.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-flex-hours.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Extended Hours Until Midnight</h3>
+                    <p class="cs-text">No other program in Lakewood stays open as late as we do. Our midnight closing time means parents working evening shifts, second jobs, or late shifts always have reliable coverage for their school-age children.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-calendar-coverage.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Summer &amp; Non-School Day Coverage</h3>
+                    <p class="cs-text">School breaks don't have to mean scrambling for coverage. Our school-age program includes care during summer, holidays, early-release days, and teacher work days, keeping your child's routine consistent year-round.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  program-details             -->
+    <!-- ============================================ -->
+    <section id="program-details" class="cs-section">
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray-big.svg" alt="bear" width="450" height="500">    
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <span class="cs-topper">What to Expect</span>
+                <h2 class="cs-title">A Typical After-School Day at Just Like Home</h2>
+                <p class="cs-text">After school drop-off, children check in with their teacher, have a healthy snack, and settle into homework time. Once schoolwork is complete, the afternoon opens up into enrichment activities, outdoor play, creative projects, and free time with friends. Evenings are calm and structured, giving kids a comfortable space to wind down before pickup. Parents receive updates and can communicate with staff anytime through the Kid Reports app.</p>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-193.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-193.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-193.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-193.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-193.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-193.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-193.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="School-age students working on creative projects after school." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    {{cta("Trusted Before & After School Care in Lakewood. Available Now", "Schedule a tour and see why Lakewood families rely on us for school-age care, year-round.", "Schedule a Tour", "/schedule-a-tour/", "Contact Us", "/contact-us/")}}
+
+{% endblock %}

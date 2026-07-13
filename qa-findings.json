@@ -1,0 +1,128 @@
+{
+  "title": "Website QA Report - Just Like Home Daycare",
+  "url": "https://justlikehome.netlify.app/",
+  "date": "2026-06-24T00:00:00.000Z",
+  "scope": "homepage-plus",
+  "checks_run": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "summary": {
+    "pages_tested": 17,
+    "breakpoints_tested": 7,
+    "total_findings": 9,
+    "by_severity": {
+      "critical": 0,
+      "major": 6,
+      "minor": 2,
+      "info": 1
+    }
+  },
+  "findings": [
+    {
+      "id": "F-001",
+      "check": 5,
+      "check_name": "Broken Links",
+      "severity": "major",
+      "title": "Multiple internal links return 404 on live site",
+      "page": "/locations/*",
+      "description": "Automated crawl found three internal destinations returning 404: /programs/toddler-care/, /resources/choosing-a-daycare-in-lakewood-wa/, and /about-us/testimonials/. These links are present in live location pages and break navigation paths for users.",
+      "suggested_fix": "Update link targets to existing routes or add redirects for legacy paths.",
+      "effort": "small",
+      "screenshot_na": "Link-crawl finding from automated check"
+    },
+    {
+      "id": "F-002",
+      "check": 5,
+      "check_name": "Broken Links",
+      "severity": "minor",
+      "title": "In-page anchor target missing on careers page",
+      "page": "/about/careers/",
+      "description": "The CTA link uses #apply-form but no matching element id exists on the page, so the button does not jump to the intended form section.",
+      "suggested_fix": "Change CTA href to #apply or add id=apply-form to the form section.",
+      "effort": "small",
+      "screenshot_na": "Anchor validation finding"
+    },
+    {
+      "id": "F-003",
+      "check": 6,
+      "check_name": "Redirects",
+      "severity": "major",
+      "title": "Legacy routes are not redirected",
+      "page": "site-wide",
+      "description": "No redirect rules were found in src/_redirects or public/_redirects, and legacy paths like /schedule-tour/ return 404 directly. This can break historical links and search index continuity.",
+      "suggested_fix": "Add explicit redirects for known historical routes in _redirects.",
+      "effort": "small",
+      "screenshot_na": "HTTP status checks for legacy paths"
+    },
+    {
+      "id": "F-004",
+      "check": 8,
+      "check_name": "Social Thumbnail",
+      "severity": "major",
+      "title": "Open Graph canonical and image URLs point to a parked domain",
+      "page": "all tested pages",
+      "description": "OG tags use justlikehomecenter.com URLs. That domain currently redirects to a parked page, and the OG image URL resolves to 404 on the redirected host. Social shares are likely to show incorrect or missing previews.",
+      "suggested_fix": "Point OG URL and OG image to a live canonical domain and verify 200 responses.",
+      "effort": "medium",
+      "screenshot_na": "Metadata and HTTP validation finding"
+    },
+    {
+      "id": "F-005",
+      "check": 8,
+      "check_name": "Social Thumbnail",
+      "severity": "minor",
+      "title": "Twitter/X meta tags missing across all pages",
+      "page": "all tested pages",
+      "description": "twitter:card, twitter:title, twitter:description, and twitter:image are not present. This weakens social snippet quality on platforms that still consume Twitter metadata.",
+      "suggested_fix": "Add Twitter meta tags in the shared head template with page-specific values.",
+      "effort": "small",
+      "screenshot_na": "Metadata extraction finding"
+    },
+    {
+      "id": "F-006",
+      "check": 9,
+      "check_name": "HTML Validation",
+      "severity": "major",
+      "title": "HTML validation errors in careers and contact pages",
+      "page": "/about/careers/ and /contact-us/",
+      "description": "Validator reports a stray closing div in careers output and an invalid aria-label on a generic div in contact output. These indicate markup quality issues that may affect semantics and maintainability.",
+      "suggested_fix": "Remove the extra closing div in careers template and add role=group (or remove aria-label) for the contact main-line div.",
+      "effort": "small",
+      "screenshot_na": "Validator output finding"
+    },
+    {
+      "id": "F-007",
+      "check": 9,
+      "check_name": "HTML Validation",
+      "severity": "major",
+      "title": "Privacy Policy and Terms pages are emitted as invalid full documents",
+      "page": "/privacy-policy/ and /terms-of-service/",
+      "description": "Validator reports missing DOCTYPE, missing title, and missing language metadata. Current templates define head/body blocks but do not extend the base layout, so output is not a complete HTML document.",
+      "suggested_fix": "Extend the base layout for both legal pages or provide complete valid HTML wrappers.",
+      "effort": "medium",
+      "screenshot_na": "Validator output finding"
+    },
+    {
+      "id": "F-009",
+      "check": 2,
+      "check_name": "Console Errors",
+      "severity": "major",
+      "title": "Embedded lead forms show load failures in automated browser context",
+      "page": "/contact-us/ and /schedule-a-tour/",
+      "description": "Third-party requests for lead connector/recaptcha intermittently abort in automation, and pages can remain in loading-form state. This may be bot-protection related, but it impacts form availability during QA.",
+      "suggested_fix": "Manually verify form loading on Chrome, Safari iOS, and Firefox; add fallback contact path when embed fails.",
+      "effort": "medium",
+      "screenshot": "qa-screenshots/key-pages/contact-us-320.png"
+    },
+    {
+      "id": "F-010",
+      "check": 10,
+      "check_name": "PageSpeed",
+      "severity": "info",
+      "title": "PageSpeed API blocked by quota in current environment",
+      "page": "site-wide",
+      "description": "Google PageSpeed API returned 429 RESOURCE_EXHAUSTED for both Netlify and canonical domain tests, so category scoring could not be produced in this run.",
+      "suggested_fix": "Run PageSpeed with a project API key or run Lighthouse CLI outside the blocked quota context.",
+      "effort": "small",
+      "screenshot_na": "API response-based limitation"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+/*-- -------------------------- -->
+<---        Page Banner         -->
+<--- -------------------------- -*/
+.page-banner {
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+    overflow: hidden;
+    isolation: isolate;
+
+    padding: clamp(5rem, 9vw, 15rem) clamp(1rem, 1.5vw, 2rem);
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    &::before {
+        top: -8rem;
+        left: -6rem;
+        width: clamp(14rem, 34vw, 24rem);
+        height: clamp(14rem, 34vw, 24rem);
+        background: rgba(255, 255, 255, 0.45);
+    }
+
+    &::after {
+        right: -7rem;
+        bottom: -10rem;
+        width: clamp(16rem, 38vw, 28rem);
+        height: clamp(16rem, 38vw, 28rem);
+        background: rgba(28, 28, 28, 0.06);
+    }
+
+    &.cs-section {
+        animation: none;
+    }
+
+    .cs-container {
+		position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(6rem, 25vw, 12rem);
+        opacity: 1;
+        max-width: 950px;
+        animation: fadeUpTransition 0.7s ease-in-out forwards;
+    }
+
+    .text-content {
+        width: 100%;
+        max-width: calc(900 / 16 * 1rem);
+    }
+
+    .cs-hero-title {
+        margin: auto;
+        color: var(--headingTextColor);
+        max-width: 1000px;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .sub-title {
+      position: relative;
+    }
+
+
+	@media screen and (min-width: 1024px) {
+		margin-top: 0;
+
+        &::before {
+            top: -10rem;
+            left: -3rem;
+        }
+
+        &::after {
+            right: -5rem;
+            bottom: -12rem;
+        }
+	}
+}
+
+/*-- -------------------------- -->
+<---      Schedule Embed      -->
+<--- -------------------------- -*/
+#schedule-tour {
+    .cs-ghl-form {
+        position: relative;
+        width: 100%;
+        min-height: clamp(42rem, 96vh, 56rem);
+        overflow: hidden;
+    }
+
+    .cs-ghl-iframe {
+        display: block;
+        width: 100%;
+        min-height: clamp(42rem, 96vh, 56rem);
+        opacity: 0;
+        transition: opacity 0.25s ease;
+    }
+
+    .cs-form-loader {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        display: grid;
+        gap: 0.8rem;
+        place-content: center;
+        justify-items: center;
+        padding: 1rem;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.93) 100%);
+        transition:
+            opacity 0.25s ease,
+            visibility 0.25s ease;
+    }
+
+    .cs-loader-spinner {
+        width: 2.5rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 0.2rem solid rgba(232, 92, 138, 0.2);
+        border-top-color: var(--primary);
+        animation: thank-you-loader-spin 0.85s linear infinite;
+    }
+
+    .cs-loader-text {
+        margin: 0;
+        color: var(--bodyTextColor);
+        font-family: var(--bodyFont);
+        font-size: 0.95rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .cs-ghl-form.cs-form-loaded {
+        .cs-form-loader {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .cs-ghl-iframe {
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes thank-you-loader-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

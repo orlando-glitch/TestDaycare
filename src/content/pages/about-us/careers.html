@@ -1,0 +1,216 @@
+---
+title: "Child Care Jobs in Lakewood, WA | Just Like Home Daycare Center"
+description: "Join Just Like Home Daycare in Lakewood, WA, hiring lead teachers, assistant teachers & assistant directors. Family-centered culture, 4 locations, competitive environment."
+preloadImg: ""
+permalink: 'about/careers/'
+eleventyNavigation:
+    key: Careers
+    order: 303
+    parent: About Us
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/career.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Join Our Team. Child Care Jobs in Lakewood, WA")}}
+
+
+    <!-- ============================================ -->
+    <!--                    join-our-team             -->
+    <!-- ============================================ -->
+    <section id="join-our-team" class="cs-section section-details">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <h2 class="cs-title">Work Somewhere That <span class="text-highlight">Feels Just Like Home</span></h2>
+                <p class="cs-text">
+                    At Just Like Home Daycare Center, every child deserves a safe, nurturing, and inclusive environment where they feel valued, respected, and loved. Since 2006, we have built a team of educators and caregivers who are passionate about helping children grow through play-based learning and meaningful relationships. Across our four Lakewood campuses, we partner with families through open communication, mutual respect, and genuine care. If you believe early childhood education is one of the most important jobs in the world, we would love to hear from you.
+                </p>
+                <a href="#apply" class="button-solid primary">Apply Today</a>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/family-own-1.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="Teacher guiding children during a collaborative classroom activity." width="925" height="740" loading="lazy" decoding="async">
+                </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Why Work with us                 -->
+    <!-- ============================================ -->
+    <section id="why-work-with-us" class="cs-section section-details pt-0">
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <h2 class="cs-title">Why Educators Choose Just Like Home</h2>
+                <p class="cs-text">
+                    We are committed to building a workplace where educators feel supported, valued, and inspired to do their best work. Our philosophy is guided by one belief: when educators thrive, children thrive. We celebrate each child's unique background, culture, abilities, and experiences, and we create classrooms where kindness, safety, and curiosity are part of every day.
+                </p>
+                <p class="cs-text"><strong>Our Motto:</strong> <b>"Nurturing children with love, learning, and care, just like home."</b></p>
+                <p class="cs-text"><strong>What We're Looking For:</strong> Warm, dependable professionals who communicate respectfully with children, families, and teammates; maintain safe and organized classrooms; and bring a growth mindset to early childhood education.</p>
+                <p class="cs-text"><strong>Professional Growth and Support:</strong> We support continuous professional growth by encouraging lifelong learning, reflective practice, and adherence to best practices in early childhood education.</p>
+
+                <a href="#apply" class="button-solid primary">Apply Today</a>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-182.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-182.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-182.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-182.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-182.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-182.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/gallery/gallery-182.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="Educator leading story time with children in a daycare classroom." width="925" height="740" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+   
+    <!-- ============================================ -->
+    <!--                    Career faq                   -->
+    <!-- ============================================ -->
+     <script defer src="/assets/js/faq.js"></script>
+    <section id="career-faq" class="cs-section pt-0 pb-0">
+        <div class="cs-container animate">
+            <h2 class="cs-title">WE'RE HIRING</h2>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Assistant Director
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">The Assistant Director oversees daily operations, supervises staff and children, ensures high-quality care standards, and manages the center in the Director's absence. This leadership role requires independent judgment, strong communication with families and staff, and a commitment to safe, inclusive, relationship-based care. Ideal candidates have ECE leadership experience and familiarity with DCYF regulations.</p>
+                        <p class="cs-text"><strong>Assistant Director - Requirements</strong></p>
+                        <ul class="cs-list">
+                            <li>Ability to pass a Washington State and FBI background check</li>
+                            <li>First Aid/CPR/Bloodborne Pathogens certification</li>
+                            <li>Food Handler's Card</li>
+                            <li>TB Test (required prior to employment)</li>
+                            <li>Initial 30 Hours STARS training</li>
+                            <li>All other training required by DCYF</li>
+                        </ul>
+                        <a href="#apply" class="cs-link">Apply Today</a>
+                    </div>
+                </li>
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Lead Teacher
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">Lead Teachers plan and implement age-appropriate, play-based curriculum, manage classroom activities, maintain records, and communicate directly with families. You will be responsible for the daily learning experience in your classroom and will collaborate with the Assistant Director to keep instruction aligned with Just Like Home standards and state requirements.</p>
+                        <p class="cs-text"><strong>Lead Teacher - Requirements</strong></p>
+                        <ul class="cs-list">
+                            <li>Ability to pass a Washington State and FBI background check</li>
+                            <li>First Aid/CPR/Bloodborne Pathogens certification</li>
+                            <li>Food Handler's Card</li>
+                            <li>TB Test (required prior to employment)</li>
+                            <li>Initial 30 Hours STARS training</li>
+                            <li>All other training required by DCYF</li>
+                        </ul>
+                        <a href="#apply" class="cs-link">Apply Today</a>
+                    </div>
+                </li>
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Assistant Teacher
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">Assistant Teachers support Lead Teachers in delivering play-based curriculum, managing classroom activities, supervising outdoor play, and maintaining a clean and safe environment. This role is ideal for dependable, compassionate team members who want to build ECE experience and grow within our organization.</p>
+                        <p class="cs-text"><strong>Assistant Teacher - Requirements</strong></p>
+                        <ul class="cs-list">
+                            <li>Ability to pass a Washington State and FBI background check</li>
+                            <li>First Aid/CPR/Bloodborne Pathogens certification</li>
+                            <li>Food Handler's Card</li>
+                            <li>TB Test (required prior to employment)</li>
+                            <li>Initial 30 Hours STARS training</li>
+                            <li>All other training required by DCYF</li>
+                        </ul>
+                        <a href="#apply" class="cs-link">Apply Today</a>
+                    </div>
+                </li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                APPLY NOW                     -->
+    <!-- ============================================ -->
+    <section id="apply" class="cs-section">
+        <div class="cs-container green-circle animate">
+            <h2 class="cs-title">APPLY NOW!</h2>
+            <div class="forms-form-wrapper">
+<iframe
+    src="https://api.leadconnectorhq.com/widget/form/UzZV0fQvJVQPGNPq6NFT"
+    style="width:100%;height:100%;border:none;border-radius:8px"
+    id="inline-UzZV0fQvJVQPGNPq6NFT" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Career Form"
+    data-height="1295"
+    data-layout-iframe-id="inline-UzZV0fQvJVQPGNPq6NFT"
+    data-form-id="UzZV0fQvJVQPGNPq6NFT"
+    title="Career Form"
+    
+        >
+</iframe>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+            </div> 
+        </div>
+    </section>
+
+    <!-- jsPDF CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Careers PDF script -->
+    <script src="/assets/js/careers-pdf.js"></script>
+    
+
+    <!-- ============================================ -->
+    <!--                CTA                     -->
+    <!-- ============================================ -->
+    <section class="cta cs-section">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray.svg" alt="bear" width="450" height="500">
+        <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn" width="426" height="279">
+        <div class="cs-container animate">
+            <h2 class="cs-title">
+                Ready to Make a Difference Every Day?
+            </h2>
+            <p class="cs-text">Apply today and join a team that's been changing children's lives in Lakewood since 2006.</p>
+            <div class="button-group">
+                <a href="#apply" class="button-solid">Apply Today</a>
+                <a href="/contact-us/" class="button-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,95 @@
+{
+	"name": "Just Like Home Daycare Center",
+	"email": "directorsemail@yahoo.com",
+	"phoneForTel": "+1-253-302-3904",
+	"phoneFormatted": "(253) 302-3904",
+	"ownerFirstName": "Owner",
+	"smsNumber": "+1-253-302-3904",
+	"address": {
+		"lineOne": "7606 Douglas St W",
+		"city": "Lakewood",
+		"state": "WA",
+		"zip": "98499",
+		"mapLink": "https://maps.app.goo.gl/HVQ29WZ85ixEEsD76"
+	},
+	"socials": {
+			"facebook": "https://www.facebook.com/",
+			"instagram": "https://www.instagram.com/"
+	},
+	"hours": "Monday to Friday: 5:30am to 12 midnight",
+	"locations": [
+		{
+			"name": "Douglas",
+			"phone": "253-301-3249",
+			"phoneForTel": "+1-253-301-3249",
+			"phoneFormatted": "(253) 301-3249",
+			"address": {
+				"lineOne": "7606 Douglas St W",
+				"city": "Lakewood",
+				"state": "WA",
+				"zip": "98499",
+				"mapLink": "https://maps.app.goo.gl/HVQ29WZ85ixEEsD76"
+			},
+			"hours": "5:30am to 12 midnight",
+			"websiteEmail": "directorsemail@yahoo.com",
+			"formEmails": [
+				"directorsemail@yahoo.com"
+			]
+		},
+		{
+			"name": "Custer 7513",
+			"phone": "253-302-4883",
+			"phoneForTel": "+1-253-302-4883",
+			"phoneFormatted": "(253) 302-4883",
+			"address": {
+				"lineOne": "7513 Custer Rd W",
+				"city": "Lakewood",
+				"state": "WA",
+				"zip": "98499",
+				"mapLink": "https://maps.app.goo.gl/V7uB8G2KMiSNcT8KA"
+			},
+			"hours": "5:30am to 12 midnight",
+			"websiteEmail": "directorsemail@yahoo.com",
+			"formEmails": [
+				"directorsemail@yahoo.com"
+			]
+		},
+		{
+			"name": "Custer 7511",
+			"phone": "253-507-5645",
+			"phoneForTel": "+1-253-507-5645",
+			"phoneFormatted": "(253) 507-5645",
+			"address": {
+				"lineOne": "7511 Custer Rd W",
+				"city": "Lakewood",
+				"state": "WA",
+				"zip": "98499",
+				"mapLink": "https://maps.google.com/?q=7511+Custer+Rd+W+Lakewood+WA+98499"
+			},
+			"hours": "5:30am to 12 midnight",
+			"websiteEmail": "directorsemail@yahoo.com",
+			"formEmails": [
+				"directorsemail@yahoo.com"
+			]
+		},
+		{
+			"name": "Custer 7507",
+			"phone": "253-302-3904",
+			"phoneForTel": "+1-253-302-3904",
+			"phoneFormatted": "(253) 302-3904",
+			"address": {
+				"lineOne": "7507 Custer Rd W",
+				"city": "Lakewood",
+				"state": "WA",
+				"zip": "98499",
+				"mapLink": "https://maps.google.com/?q=7507+Custer+Rd+W+Lakewood+WA+98499"
+			},
+			"hours": "5:30am to 12 midnight",
+			"websiteEmail": "directorsemail@yahoo.com",
+			"formEmails": [
+				"directorsemail@yahoo.com"
+			]
+		}
+	],
+	"domain": "https://justlikehomecenter.com"
+}

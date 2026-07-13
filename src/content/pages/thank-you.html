@@ -1,0 +1,39 @@
+---
+title: "Thank You"
+description: "Thank You Page"
+preloadImg: ""
+permalink: 'thank-you/'
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/extra.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    Banner                   -->
+    <!-- ============================================ -->
+
+    <section class="page-banner cs-section">
+        <div class="cs-container animate">
+            <div class="text-content">
+                <h1 class="cs-hero-title text-center">
+                    Thank You for Applying!
+                </h1>
+                <p class="cs-text">
+                    Thank you for your interest in joining the {{client.name}} team! We've received your application and our hiring team will review it carefully. If your qualifications match our needs, we'll reach out to schedule an interview. In the meantime, feel free to call us with any questions.
+                </p>
+                <a href="tel:{{client.phoneForTel}}" class="button-solid">{{client.phoneFormatted}}</a>
+            </div>
+        </div>
+    </section>
+
+
+    {% endblock %}

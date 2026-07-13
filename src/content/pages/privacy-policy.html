@@ -1,0 +1,383 @@
+---
+title: 'Privacy Policy'
+description: 'Privacy Policy'
+preloadImg: ''
+permalink: 'privacy-policy/'
+eleventyExcludeFromCollections: true
+---
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.75; color: #1a1a1a; background: #fafaf8; padding: 2rem 1rem 4rem; }
+    .container { max-width: 760px; margin: 0 auto; background: #fff; border: 1px solid #e4e4dc; border-radius: 4px; padding: 3rem 3.5rem; }
+    .doc-label { font-family: 'Courier New', monospace; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #888; margin-bottom: 0.5rem; }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.4rem; color: #111; }
+    .last-updated { font-size: 0.82rem; color: #888; font-style: italic; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e4e4dc; }
+    h2 { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #111; margin: 2.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; color: #333; }
+    ol, ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.4rem; color: #333; }
+    a { color: #1a4a8a; text-decoration: underline; }
+    .accordions { border: 1px solid #ddd; border-radius: 4px; margin: 1.25rem 0; overflow: hidden; }
+    details.accordion { border-bottom: 1px solid #ddd; }
+    details.accordion:last-child { border-bottom: none; }
+    details.accordion summary { cursor: pointer; padding: 0.75rem 1rem; font-weight: 600; font-size: 0.9rem; list-style: none; display: flex; align-items: center; gap: 0.5rem; background: #fafaf8; transition: background 0.15s; }
+    details.accordion summary:hover { background: #f0f0ec; }
+    details.accordion summary::-webkit-details-marker { display: none; }
+    details.accordion summary::before { content: '+'; font-size: 1.1rem; color: #888; font-weight: 400; line-height: 1; flex-shrink: 0; transition: transform 0.2s; }
+    details.accordion[open] summary::before { content: '−'; }
+    .accordion-content { padding: 0.75rem 1.25rem 1rem 2.25rem; background: #fff; }
+    .accordion-section { margin-bottom: 0.75rem; }
+    .accordion-section h4 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 0.3rem; }
+    .accordion-section-content ul { margin-bottom: 0; }
+    .sms-example { background: #f0f4f8; border: 1px solid #d8e2ec; border-radius: 4px; padding: 1rem 1.25rem; margin: 0.5rem 0 1.25rem; font-size: 0.9rem; color: #1a1a1a; }
+    .sms-example p { margin-bottom: 0.5rem; color: #1a1a1a; }
+    .sms-example p:last-child { margin-bottom: 0; }
+    @media (max-width: 600px) { .container { padding: 2rem 1.25rem; } }
+  </style>
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+  <p class="doc-label">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="last-updated">Last updated: Feb 06, 2026</p>
+
+  <p>We value your privacy very highly. Please read this Privacy Policy carefully before using the <a href="{{ client.domain }}">{{ client.domain }}</a> website (the "Website") operated by {{ client.name }} ("us, we, our") as this Privacy Policy contains important information regarding your privacy and how we may use the information we collect about you.</p>
+  <p>Your access to or use of the Website is conditional upon your acceptance of and compliance with this Privacy Policy. This Privacy Policy applies to everyone, including but not limited to visitors, users and others, who wish to access or use the Website.</p>
+  <p>By accessing or using the Website, you agree to be bound by this Privacy Policy. If you disagree with any part of this Privacy Policy, you do not have our permission to access or use the Website.</p>
+
+  <h2>Interpretation and Definitions</h2>
+  <h3>Interpretation</h3>
+  <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+
+  <h3>Definitions</h3>
+  <ul>
+    <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to {{ client.name }}.</li>
+    <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
+    <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
+    <li><strong>Service</strong> refers to the advertisement, website, or application.</li>
+    <li><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company.</li>
+    <li><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</li>
+    <li><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
+  </ul>
+
+  <h2>What Information We Collect and Store</h2>
+  <p>We collect and store any and all information that you enter on this Website. We collect and store the following information about you:</p>
+
+  <div class="accordions">
+
+    <details class="accordion">
+      <summary>Identifying Information — Name</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">Name</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Analytics</li>
+              <li>Counting ad impressions to unique visitors</li>
+              <li>Marketing and advertising</li>
+              <li>Targeted advertising</li>
+              <li>Verifying position and quality of ad impressions</li>
+              <li>Booking and managing calendar appointments</li>
+              <li>Enforcing our Terms of Service</li>
+              <li>Performing services</li>
+              <li>Providing customer service</li>
+              <li>Resolving disputes</li>
+              <li>Responding to consumer messages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>Identifying Information — Postal / Shipping Address</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">Postal / Shipping address</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Enforcing our Terms of Service</li>
+              <li>Marketing and advertising</li>
+              <li>Performing services</li>
+              <li>Providing customer service</li>
+              <li>Resolving disputes</li>
+              <li>Responding to consumer messages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>Identifying Information — Phone Number</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">Phone number</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Booking and managing calendar appointments</li>
+              <li>Counting ad impressions to unique visitors</li>
+              <li>Enforcing our Terms of Service</li>
+              <li>Marketing and advertising</li>
+              <li>Performing services</li>
+              <li>Providing customer service</li>
+              <li>Resolving disputes</li>
+              <li>Responding to consumer messages</li>
+              <li>Sending SMS messages</li>
+              <li>Targeted advertising</li>
+              <li>Verifying position and quality of ad impressions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>Identifying Information — IP Address</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">IP address</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Analytics</li>
+              <li>Booking and managing calendar appointments</li>
+              <li>Counting ad impressions to unique visitors</li>
+              <li>Enforcing our Terms of Service</li>
+              <li>Marketing and advertising</li>
+              <li>Performing services</li>
+              <li>Providing customer service</li>
+              <li>Resolving disputes</li>
+              <li>Responding to consumer messages</li>
+              <li>Targeted advertising</li>
+              <li>Verifying position and quality of ad impressions</li>
+              <li>Providing videos and tracking user interactions with such videos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>Identifying Information — Email Address</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">Email address</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Booking and managing calendar appointments</li>
+              <li>Counting ad impressions to unique visitors</li>
+              <li>Enforcing our Terms of Service</li>
+              <li>Marketing and advertising</li>
+              <li>Performing services</li>
+              <li>Providing customer service</li>
+              <li>Resolving disputes</li>
+              <li>Responding to consumer messages</li>
+              <li>Targeted advertising</li>
+              <li>Verifying position and quality of ad impressions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>Identifying Information — Device Identifier</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">Device identifier</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Analytics</li>
+              <li>Booking and managing calendar appointments</li>
+              <li>Counting ad impressions to unique visitors</li>
+              <li>Marketing and advertising</li>
+              <li>Targeted advertising</li>
+              <li>Verifying position and quality of ad impressions</li>
+              <li>Providing videos and tracking user interactions with such videos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>Identifying Information — Online Identifier</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">Online identifier</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Analytics</li>
+              <li>Booking and managing calendar appointments</li>
+              <li>Counting ad impressions to unique visitors</li>
+              <li>Marketing and advertising</li>
+              <li>Targeted advertising</li>
+              <li>Verifying position and quality of ad impressions</li>
+              <li>Providing videos and tracking user interactions with such videos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>Internet or Other Electronic Activity — Website / App Interaction</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">Information regarding your interaction with our website or application</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Analytics</li>
+              <li>Counting ad impressions to unique visitors</li>
+              <li>Marketing and advertising</li>
+              <li>Targeted advertising</li>
+              <li>Verifying position and quality of ad impressions</li>
+              <li>Providing videos and tracking user interactions with such videos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>Internet or Other Electronic Activity — Embedded Video Interaction</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">Information regarding your interaction with embedded videos</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Providing videos and tracking user interactions with such videos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary>Identifying Information — Calendar Account Information</summary>
+      <div class="accordion-content">
+        <div class="accordion-section">
+          <h4>Specific piece of information</h4>
+          <div class="accordion-section-content">Calendar account information</div>
+        </div>
+        <div class="accordion-section">
+          <h4>How we use this information</h4>
+          <div class="accordion-section-content">
+            <ul>
+              <li>Booking and managing calendar appointments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+  </div>
+
+  <h2>With Whom We Share Your Personal Information</h2>
+  <p>We may share your personal information with the following categories of third parties, solely for the purposes described in this Privacy Policy:</p>
+  <ul>
+    <li><strong>Service Providers:</strong> Companies that help us operate our business, such as our website hosting provider, CRM and booking platforms, and email/SMS messaging services (e.g., Twilio).</li>
+    <li><strong>Analytics Providers:</strong> Tools such as Google Analytics that help us understand how visitors use our Website.</li>
+    <li><strong>Advertising Partners:</strong> If we run digital advertising campaigns, platforms such as Google Ads or Meta (Facebook/Instagram) may receive data through tracking pixels or tags on our Website.</li>
+    <li><strong>Legal or Regulatory Authorities:</strong> When required by law, subpoena, or government request.</li>
+  </ul>
+  <p>We will not sell your personal information to third parties. We will not share your actual consent to receiving SMS messaging with any third parties or affiliates. This means that when you consent to receiving SMS messages from us, this will not automatically opt you into receiving SMS messaging from any other company.</p>
+
+  <h2>SMS Messaging</h2>
+  <p>We will only send you SMS messages if you consent to us doing so. We obtain SMS consent via website forms, booking flows, paper forms, or verbal consent through customer service.</p>
+  <p>If you opt in, we may send conversational, informational, and promotional messages such as appointment confirmations, reminders, service updates, and review requests. Message frequency varies based on your interaction with our services, and message and data rates may apply.</p>
+  <p>All messages will originate from {{ client.smsNumber }}. You may opt out of SMS messages at any time by texting "STOP" or by emailing us at <a href="mailto:{{ client.email }}">{{ client.email }}</a>. For assistance, text "HELP" or contact us directly.</p>
+  <p>For full SMS program terms and conditions, please read our Terms of Service: <a href="{{ client.domain }}/terms-of-service/">{{ client.domain }}/terms-of-service/</a>.</p>
+  <p>We use Twilio to send SMS messages. To learn more about their privacy practices and terms please read their <a href="https://www.twilio.com/en-us/legal/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://www.twilio.com/en-us/legal/tos" target="_blank" rel="noopener noreferrer">Terms of Service</a>.</p>
+
+  <h2>Cookies</h2>
+  <p>A cookie is a small piece of data sent from a website and stored on your device by your browser. Cookies are generally used to allow websites to respond to you as an individual, to remember your preferences, to test content, and to analyze your interactions with websites or with advertisements.</p>
+  <p>This Website uses cookies set by third-party services such as Google Analytics to help us understand how visitors interact with our site. These cookies collect information such as pages visited, time spent on the site, and referring URLs. You can control or disable cookies through your browser settings. Please note that disabling cookies may affect certain functionality of the Website.</p>
+
+  <h2>Disclosure of Your Personal Data</h2>
+  <p>We may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
+  <ul>
+    <li>Comply with a legal obligation</li>
+    <li>Protect and defend our rights or property</li>
+    <li>Prevent or investigate possible wrongdoing in connection with the Website</li>
+    <li>Protect the personal safety of users of the Website or the public</li>
+    <li>Protect against legal liability</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>This Website is intended for use by a general audience and does not offer services to children. Should a child whom we know to be under 18 send personal information to us, we will use that information only to respond to that child to inform them that they cannot use this Website.</p>
+
+  <h2>Analytics Programs</h2>
+  <p>This Website uses Google Analytics to collect information about you and your behaviors. If you would like to opt-out of Google Analytics, please visit <a href="https://tools.google.com/dlpage/gaoptout/" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout/</a>.</p>
+
+  <h2>Third-Party Websites</h2>
+  <p>This Website may contain hyperlinks to websites operated by parties other than us. We provide such hyperlinks for your reference only. We do not control such websites and are not responsible for their contents or the privacy or other practices of such websites. It is up to you to read and fully understand their Privacy Policies. Our inclusion of hyperlinks to such websites does not imply any endorsement of the material on such websites or any association with their operators.</p>
+
+  <h2>Data Retention</h2>
+  <p>We retain your personal information only for as long as necessary to fulfill the purposes described in this Privacy Policy, or as required by law. Contact form submissions and booking inquiries are retained for up to 3 years after your last interaction with us. Analytics data is retained according to the default retention settings of our analytics provider. If you would like us to delete your personal information sooner, please contact us at <a href="mailto:{{ client.email }}">{{ client.email }}</a>.</p>
+
+  <h2>Your Privacy Rights</h2>
+  <p>Depending on your state or jurisdiction, you may have certain rights regarding your personal information, including:</p>
+  <ul>
+    <li><strong>Right to Know:</strong> You may request details about the personal information we have collected about you and how we use it.</li>
+    <li><strong>Right to Delete:</strong> You may request that we delete the personal information we have collected about you, subject to certain legal exceptions.</li>
+    <li><strong>Right to Correct:</strong> You may request that we correct inaccurate personal information.</li>
+    <li><strong>Right to Opt-Out:</strong> You may opt out of the sale or sharing of your personal information. We do not sell personal information.</li>
+  </ul>
+  <p>To exercise any of these rights, please contact us at <a href="mailto:{{ client.email }}">{{ client.email }}</a>. We will respond to your request within the timeframe required by applicable law.</p>
+
+  <h2>Security of Your Information</h2>
+  <p>We take reasonable administrative, technical, and physical measures to protect your personal information from unauthorized access, use, alteration, or destruction. Our Website uses SSL/TLS encryption to secure data transmitted between your browser and our servers. However, no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee its absolute security.</p>
+
+  <h2>Do Not Track Disclosure</h2>
+  <p>Some web browsers may transmit "Do Not Track" (DNT) signals. Because there is no industry standard for how DNT signals should be interpreted, this Website does not currently respond to DNT signals. We will continue to monitor developments around DNT technology and update our practices as standards evolve.</p>
+
+  <h2>Questions</h2>
+  <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:{{ client.email }}">{{ client.email }}</a>.</p>
+
+</div>
+
+    {% endblock %}

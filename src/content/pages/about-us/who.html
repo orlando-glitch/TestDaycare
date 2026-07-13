@@ -1,0 +1,367 @@
+---
+title: "Our Story | Just Like Home Daycare Center of Lakewood"
+description: "Family-owned since 2006, Just Like Home Daycare Center of Lakewood grew from a home daycare into 4 trusted locations. Learn our story and what drives us."
+preloadImg: ""
+permalink: 'about/our-story/'
+eleventyNavigation:
+    key: Our Story
+    order: 301
+    parent: About Us
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Family-Owned Child Care in Lakewood Since 2006", "Our Story")}}
+
+    <!-- ============================================ -->
+    <!--               where-it-all-began               -->
+    <!-- ============================================ -->
+    <section class="cs-section section-sbs">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Where It All Began</span>
+                <h2 class="cs-title">A Mission That Started at Home</h2>
+                <p class="cs-text">In 2006, Just Like Home Daycare Center began as a mission, not just a business. Operating from our family home under the name Lil Shadows 24 Hours, we served parents working evenings, overnight shifts, and other non-traditional schedules when few providers would.</p>
+                <p class="cs-text">From day one, our goal has been simple: open doors, extended hours, and the kind of warmth that makes families feel their children are truly at home.</p>
+            </div>
+            <div class="sbs-image">
+                <img class="cs-sun" decoding="async" src="/assets/images/sun.png" alt="sun" width="210" height="200">
+                <img class="cs-star" decoding="async" src="/assets/images/shooting-star.png" alt="star" width="274" height="193">
+                <picture class="cs-picture cs-picture-top">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 300, height: 300 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 300, height: 300 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" alt="Children and teacher exploring a globe together." width="300" height="300" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-bottom">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 300, height: 342 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 300, height: 342 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" alt="Caregiver reading with children during small-group time." width="300" height="342" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-tall">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" alt="Child smiling during classroom activity time." width="300" height="662" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                about-timeline               -->
+    <!-- ============================================ -->
+    <section id="about-timeline" class="cs-section pt-0">
+        <div class="cs-container">
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                <div class="timeline-col timeline-col-left">
+                    <div class="timeline-header">
+                        <h2 class="cs-title">Our Story</h2>
+                    </div>
+                    <div class="timeline-item left timeline-3">
+                        <div class="timeline-content left">
+                            <h3 class="cs-h3">2008 - Opening Our First Childcare Center</h3>
+                            <p class="cs-text">As the needs of our community grew, so did our dream. In 2008, we opened our first childcare center, Just Like Home Daycare Center, expanding our ability to serve more children and families.</p>
+                            <p class="cs-text">We continued offering extended childcare hours, Monday through Friday from 5:30 a.m. to midnight, while keeping the same warm, family-centered care that made our home daycare special.</p>
+                            <picture class="timeline-image">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-003.jpg' | resize({ width: 400 }) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-003.jpg' | resize({ width: 400 }) | webp %}" type="image/webp">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-003.jpg' | resize({ width: 520 }) | avif %}" type="image/avif">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-003.jpg' | resize({ width: 520 }) | webp %}" type="image/webp">
+                                <img src="{% getUrl '/assets/images/gallery/gallery-003.jpg' | jpeg %}" alt="Child exploring a globe during classroom learning." loading="lazy" decoding="async" width="520" height="300">
+                            </picture>
+                        </div>
+                        <div class="timeline-year">2008</div>
+                    </div>
+
+                    <div class="timeline-item left timeline-5">
+                        <div class="timeline-content left">
+                            <h3 class="cs-h3">2013 - Expanding to Lakewood</h3>
+                            <p class="cs-text">In 2013, we reacquired our original center and opened Just Like Home Daycare Center of Lakewood. This was an important milestone in our journey and helped us continue building strong relationships with children, parents, and the local community.</p>
+                            <picture class="timeline-image">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-007.jpg' | resize({ width: 400 }) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-007.jpg' | resize({ width: 400 }) | webp %}" type="image/webp">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-007.jpg' | resize({ width: 520 }) | avif %}" type="image/avif">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-007.jpg' | resize({ width: 520 }) | webp %}" type="image/webp">
+                                <img src="{% getUrl '/assets/images/gallery/gallery-007.jpg' | jpeg %}" alt="Children participating in a music activity together." loading="lazy" decoding="async" width="520" height="300">
+                            </picture>
+                        </div>
+                        <div class="timeline-year animate">2013</div>
+                    </div>
+
+                    <div class="timeline-item left timeline-7">
+                        <div class="timeline-content left">
+                            <h3 class="cs-h3">2018 - Launching Our School-Age Program</h3>
+                            <p class="cs-text">In 2018, we recognized the growing need for care for older children and launched our School-Age Program. This program was created to support children before and after school, as well as during school breaks, giving families more dependable childcare options as their children grew.</p>
+                            <picture class="timeline-image">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-004.jpg' | resize({ width: 400 }) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-004.jpg' | resize({ width: 400 }) | webp %}" type="image/webp">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-004.jpg' | resize({ width: 520 }) | avif %}" type="image/avif">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-004.jpg' | resize({ width: 520 }) | webp %}" type="image/webp">
+                                <img src="{% getUrl '/assets/images/gallery/gallery-004.jpg' | jpeg %}" alt="Children practicing writing and fine motor skills in class." loading="lazy" decoding="async" width="520" height="300">
+                            </picture>
+                        </div>
+                        <div class="timeline-year animate">2018</div>
+                    </div>
+                    <div class="timeline-item left timeline-9">
+                        <div class="timeline-content left">
+                            <h3 class="cs-h3">2026 - Reopening and Continuing Our Mission</h3>
+                            <p class="cs-text">In 2026, we celebrated another milestone by reopening Just Like Home Daycare Center in Lakewood. Today, we are especially grateful that our centers are centrally located within the same area, allowing our staff, families, and programs to stay closely connected.</p>
+                            <p class="cs-text">This growth reflects the trust families have placed in us over the years and our continued commitment to supporting the Lakewood community.</p>
+                            <picture class="timeline-image">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 400 }) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 400 }) | webp %}" type="image/webp">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 520 }) | avif %}" type="image/avif">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 520 }) | webp %}" type="image/webp">
+                                <img src="{% getUrl '/assets/images/gallery/gallery-013.jpg' | jpeg %}" alt="Children engaged in circle time with their teacher." loading="lazy" decoding="async" width="520" height="300">
+                            </picture>
+                        </div>
+                        <div class="timeline-year animate">2026</div>
+                    </div>
+                </div>
+
+                <div class="timeline-col timeline-col-right">
+                    <div class="timeline-item right timeline-2">
+                        <div class="timeline-year secondary">2006</div>
+                        <div class="timeline-content right">
+                            <h3 class="cs-h3">2006 - Our Beginning as Lil Shadows 24 Hours</h3>
+                            <p class="cs-text">Our journey began in 2006 with a simple mission: to support working families who needed dependable childcare outside of traditional business hours. We started in our family home as Lil Shadows 24 Hours, providing care for children whose parents worked early mornings, evenings, overnight shifts, and other non-traditional schedules.</p>
+                            <p class="cs-text">From the beginning, our goal was to create a safe, nurturing, and home-like environment where children could feel loved, supported, and comfortable while their parents worked.</p>
+                            <picture class="timeline-image">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-019.jpg' | resize({ width: 400 }) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-019.jpg' | resize({ width: 400 }) | webp %}" type="image/webp">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-019.jpg' | resize({ width: 520 }) | avif %}" type="image/avif">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-019.jpg' | resize({ width: 520 }) | webp %}" type="image/webp">
+                                <img src="{% getUrl '/assets/images/gallery/gallery-019.jpg' | jpeg %}" alt="Infant exploring blocks during supervised play." loading="lazy" decoding="async" width="520" height="300">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right timeline-4">
+                        <div class="timeline-content right">
+                            <h3 class="cs-h3">2012 - Growing to Better Serve Families</h3>
+                            <p class="cs-text">In 2012, we relocated our Tacoma center to a larger site to better meet the needs of the families we served. This move allowed us to provide more space, improved learning environments, and continued support for parents who relied on flexible childcare.</p>
+                            <picture class="timeline-image">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-010.jpg' | resize({ width: 400 }) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-010.jpg' | resize({ width: 400 }) | webp %}" type="image/webp">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-010.jpg' | resize({ width: 520 }) | avif %}" type="image/avif">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-010.jpg' | resize({ width: 520 }) | webp %}" type="image/webp">
+                                <img src="{% getUrl '/assets/images/gallery/gallery-010.jpg' | jpeg %}" alt="Children building confidence through hands-on classroom activities." loading="lazy" decoding="async" width="520" height="300">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right timeline-6">
+                        <div class="timeline-year animate secondary">2016</div>
+                        <div class="timeline-content right">
+                            <h3 class="cs-h3">2016 - Opening Lakewood 3</h3>
+                            <p class="cs-text">In 2016, we expanded again by opening Just Like Home Daycare Center of Lakewood 3, located across the lot from our existing center. Having centers close together allowed us to stay connected as one family-owned program while making care more convenient for families.</p>
+                            <picture class="timeline-image">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 400 }) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 400 }) | webp %}" type="image/webp">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 520 }) | avif %}" type="image/avif">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-012.jpg' | resize({ width: 520 }) | webp %}" type="image/webp">
+                                <img src="{% getUrl '/assets/images/gallery/gallery-012.jpg' | jpeg %}" alt="Children collaborating on creative drawing activities." loading="lazy" decoding="async" width="520" height="300">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right timeline-8">
+                        <div class="timeline-year animate secondary">2020</div>
+                        <div class="timeline-content right">
+                            <h3 class="cs-h3">2020 - Adapting During the COVID-19 Pandemic</h3>
+                            <p class="cs-text">Like many businesses, we faced challenges during the COVID-19 pandemic. To continue providing quality care while adapting to changing circumstances, we made the difficult decision to close our Tacoma location and relocate families and staff to our Lakewood centers.</p>
+                            <p class="cs-text">Through this transition, our commitment remained the same: to care for children in a safe, loving, and supportive environment.</p>
+                            <picture class="timeline-image">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 400 }) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 400 }) | webp %}" type="image/webp">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 520 }) | avif %}" type="image/avif">
+                                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/gallery/gallery-011.jpg' | resize({ width: 520 }) | webp %}" type="image/webp">
+                                <img src="{% getUrl '/assets/images/gallery/gallery-011.jpg' | jpeg %}" alt="Children listening to teacher-led story time." loading="lazy" decoding="async" width="520" height="300">
+                            </picture>
+                        </div>
+                    </div>
+                    
+
+                    <div class="timeline-item right timeline-7">
+                        <div class="timeline-year animate secondary top-30">Today</div>
+                        <div class="timeline-content right">
+                            <h3 class="cs-h3">Today - Nearly 20 Years of Family-Owned Childcare</h3>
+                            <p class="cs-text">Today, Just Like Home Daycare Center remains proudly family-owned and family-operated. What began as a small home daycare has grown into multiple childcare centers, but our mission has never changed.</p>
+                            <p class="cs-text">For nearly two decades, we have provided safe, loving, and home-like environments where children can learn, grow, and thrive. Our name reflects our philosophy: every child deserves to feel safe, loved, and valued</p>
+                            <div class="timeline-image timeline-video-wrap" data-timeline-video>
+                                <video preload="metadata" playsinline width="520" height="300" aria-label="Children expressing creativity through painting projects.">
+                                    <source src="/assets/images/just-like-home-story-lakewood.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <button class="timeline-video-play" type="button" aria-label="Play video">
+                                    <span class="timeline-video-play-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn and rocket" width="427" height="279">
+
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--               our-philosophy               -->
+    <!-- ============================================ -->
+    <section id="our-philosophy" class="cs-section section-details bg-secondary">
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Our Philosophy</span>
+                <h2 class="cs-title">Why We Do What We Do</h2>
+                <p class="cs-text">Our name is our philosophy. Every child who walks through our doors should feel just like home. That means safety, warmth, consistency, and love. It means teachers who know your child by name and a place where families of every background are welcomed and supported.</p>
+                <p class="cs-text">From our bilingual environment to our Creative Curriculum classrooms, every decision is rooted in the belief that early childhood is the most important stage of life.</p>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 700, height: 740 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 700, height: 740 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 700, height: 740 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 740, height: 940 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 740, height: 940 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 740, height: 940 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/gallery/gallery-006.jpg' | resize({ width: 740, height: 940 }) | jpeg %}" alt="Child smiling in a welcoming daycare classroom." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               what-sets-us-apart               -->
+    <!-- ============================================ -->
+    <section class="cs-section section-highlights">
+        <div class="cs-container animate">
+            <span class="cs-topper">What Sets Us Apart</span>
+            <h2 class="cs-title">What Makes Just Like Home Different</h2>
+            <p class="cs-text">After nearly 20 years, we remain the only child care provider in Lakewood operating Monday through Friday from 5:30 AM to midnight. We're proudly family-owned, and all four campuses are centrally located near Douglas Street and Custer Road.</p>
+            <div class="cs-card-group">
+                <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn and rocket" width="427" height="279">
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-pencil-ruler.svg" alt="" width="30" height="30">
+                    </span>
+                    <h3 class="cs-h3">Family-Owned and Operated Since 2006</h3>
+                    <p class="cs-text">We're not a franchise or corporate chain. We're a family-run operation built on values, relationships, and long-term trust.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-puzzle.svg" alt="" width="29" height="34">
+                    </span>
+                    <h3 class="cs-h3">Extended Hours Nobody Else Offers</h3>
+                    <p class="cs-text">Every campus is open 5:30 AM to midnight, designed from day one for parents with non-traditional schedules.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-kindergarten.svg" alt="" width="38" height="31">
+                    </span>
+                    <h3 class="cs-h3">Four Locations, One Community</h3>
+                    <p class="cs-text">Our campuses are close together, giving families flexibility in location without sacrificing consistency of care.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--               core-values               -->
+    <!-- ============================================ -->
+    <section class="cs-section section-prose pt-0 pb-0">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray-big.svg" alt="bear" width="450" height="500">    
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <span class="cs-topper">Core Values</span>
+                <h2 class="cs-title">The Values That Guide Everything We Do</h2>
+                <h3 class="cs-h3">Family First</h3>
+                <p class="cs-text">We partner with parents because families are children's first and most important teachers.</p>
+                <h3 class="cs-h3">Safety and Trust</h3>
+                <p class="cs-text">Our centers use restricted access, fenced yards, and security cameras. Every team member passes state and FBI background checks.</p>
+                <h3 class="cs-h3">Learning Through Play</h3>
+                <p class="cs-text">Our play-based, Creative Curriculum approach keeps learning joyful, purposeful, and age-appropriate.</p>
+                <h3 class="cs-h3">Respect and Inclusion</h3>
+                <p class="cs-text">We celebrate diversity and treat every child, family, and staff member with dignity and respect.</p>
+                <h3 class="cs-h3">Flexibility and Support</h3>
+                <p class="cs-text">Extended hours and subsidy acceptance exist because dependable care should work for real-life schedules.</p>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 700, height: 875 }) | avif %}" type="image/avif">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 700, height: 875 }) | webp %}" type="image/webp">
+                   <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 700, height: 875 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 940, height: 752 }) | avif %}" type="image/avif">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 940, height: 752 }) | webp %}" type="image/webp">
+                   <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 940, height: 752 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl '/assets/images/gallery/gallery-005.jpg' | resize({ width: 940, height: 752 }) | jpeg %}" alt="Children learning and socializing in a supportive classroom." width="940" height="752" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    {{cta("Come Visit the Family Behind Just Like Home", "Schedule a tour and meet our team, we'd love to show you what nearly 20 years of serving Lakewood looks like.", "Schedule a Tour", "/schedule-a-tour/", "Contact Us", "/contact-us/")}}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const videoCards = document.querySelectorAll("[data-timeline-video]");
+
+            videoCards.forEach((card) => {
+                const video = card.querySelector("video");
+                const playButton = card.querySelector(".timeline-video-play");
+
+                if (!video || !playButton) {
+                    return;
+                }
+
+                video.controls = false;
+
+                const revealControls = () => {
+                    card.classList.add("is-played");
+                    playButton.hidden = true;
+                    video.controls = true;
+                };
+
+                const resetToInitialState = () => {
+                    card.classList.remove("is-played");
+                    playButton.hidden = false;
+                    video.controls = false;
+                };
+
+                playButton.addEventListener("click", async () => {
+                    revealControls();
+
+                    try {
+                        await video.play();
+                    } catch (error) {
+                        resetToInitialState();
+                    }
+                });
+
+                video.addEventListener("play", revealControls);
+            });
+        });
+    </script>
+
+{% endblock %}

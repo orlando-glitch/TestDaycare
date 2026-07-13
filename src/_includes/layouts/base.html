@@ -1,0 +1,87 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Standard meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ description }}">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ client.domain }}{{ page.url }}">
+    <meta property="og:image" content="{{ client.domain }}/assets/images/social-thumbnail.jpg">
+    <meta property="og:image:secure_url" content="{{ client.domain }}/assets/images/social-thumbnail.jpg">
+
+    <!--Favicons-->
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Just Like Home Daycare Center" />
+<link rel="manifest" href="/assets/favicons/site.webmanifest" />
+
+    <!-- Preloads -->
+    <!-- <link rel="preload" as="image" href="/assets/images/logo.png"> -->
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dm-sans-v17-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dm-sans-v17-latin-italic.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dm-sans-v17-latin-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dm-sans-v17-latin-800.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/nunito-v32-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/nunito-v32-latin-800.woff2" crossorigin>
+
+    <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+    {% if preloadImg != '' %}
+      <link rel="preload" as="image" href="{{ preloadImg }}">
+    {% endif %}
+
+    <!-- Sitewide Stylesheets and Scripts -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <script defer src="/assets/js/nav.js"></script>
+    <script defer src="/assets/js/wave-scroll.js"></script>
+
+    {% block head %}{% endblock %}
+    <title>{{ title }}</title>
+
+    <!-- NAP -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+            (function(w,d,s,l,i){
+                w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-P9F8W2N3');
+        }, 3000); // Delay loading by 2000 milliseconds
+      });
+    </script>
+
+  </head>
+  <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9F8W2N3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    {% include "components/header.html" %}
+    <main id="main">
+      <script defer src="/assets/js/onView.js"></script>
+      {% block body %}{% endblock %}
+    </main>
+    {% include "components/footer.html" %}
+<!-- <script src="http://localhost:3001/image-picker-client.js"></script> -->
+  </body>
+</html>

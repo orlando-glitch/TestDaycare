@@ -1,0 +1,143 @@
+---
+title: "Flexible Hours Daycare in Lakewood, WA | Just Like Home"
+description: "Flexible hours daycare in Lakewood, WA, open Mon to Fri 5:30 AM to midnight. Child care for shift workers, military & non-traditional schedules. DSHS accepted."
+preloadImg: ""
+permalink: 'programs/flexible-hours-child-care/'
+eleventyNavigation:
+    key: Flexible Hours Child Care ( 5:30 AM- Midnight )(All Ages)
+    order: 306
+    parent: Programs
+sitemap:
+    priority: 0.8
+---
+
+{% extends "layouts/base.html" %}
+{% from "components/banner.html" import banner %}
+{% from "components/cta.html" import cta %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/programs.css">
+{% endblock %}
+
+{% block body %}
+
+    {{banner("Flexible Hours Daycare in Lakewood, WA", "Open 5:30 AM to Midnight")}}
+
+    <!-- ============================================ -->
+    <!--                program-sbs               -->
+    <!-- ============================================ -->
+    <section id="program-sbs" class="cs-section">
+        <div class="cs-container sbs-standard animate">
+            <div class="text-content">
+                <span class="cs-topper">Program Overview</span>
+                <h2 class="cs-hero-title">The Only Daycare in Lakewood Open Until Midnight</h2>
+                <p class="cs-text">Most daycares in Lakewood close by 6 PM. For parents who work in healthcare, hospitality, transportation, retail, the military, or any non-traditional industry, that closing time creates a daily crisis. Just Like Home Daycare Center was founded specifically to solve that problem. Since 2006, we have operated Monday through Friday from 5:30 AM to midnight, giving families throughout Pierce County a reliable, licensed child care option that fits around the real demands of modern work schedules. No other daycare in Lakewood offers this level of flexibility.</p>
+                <a href="/schedule-a-tour/" class="button-solid">Schedule a Tour</a>
+            </div>
+            <div class="sbs-image">
+                <img class="cs-sun" decoding="async" src="/assets/images/sun.png" alt="sun" width="210" height="200">
+                <img class="cs-star" decoding="async" src="/assets/images/shooting-star.png" alt="star" width="274" height="193">
+                <picture class="cs-picture cs-picture-top">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 300, height: 300 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 300, height: 300 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 300, height: 300 }) | jpeg %}" alt="Children and teacher engaged in a collaborative classroom activity." width="300" height="300" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-bottom">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 300, height: 342 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 300, height: 342 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-013.jpg' | resize({ width: 300, height: 342 }) | jpeg %}" alt="Children participating in group learning during circle time." width="300" height="342" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture-tall">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | avif %}" type="image/avif">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | webp %}" type="image/webp">
+                         <source srcset="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-020.jpg' | resize({ width: 300, height: 662 }) | jpeg %}" alt="Child smiling during an afternoon classroom session." width="300" height="662" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                program-highlights                -->
+    <!-- ============================================ -->
+    <section id="program-highlights" class="cs-section">
+        <div class="cs-container animate">
+            <span class="cs-topper">Who We Serve</span>
+            <h2 class="cs-title">Built for Families Who Need More Than a 9-to-5 Daycare</h2>
+            <p class="cs-text">Our flexible hours program isn't a separate offering, it's woven into the fabric of everything we do. All four of our Lakewood campuses operate on the same extended schedule, so regardless of which location your family chooses, you'll have access to quality child care from early morning through late evening. Our extended schedule serves a wide range of working families throughout Lakewood, Tacoma, and the broader Pierce County area.</p>
+            <div class="cs-card-group">
+                <img class="cs-saturn" decoding="async" src="/assets/images/saturn-and-rocket.png" alt="saturn and rocket" width="427" height="279">
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-flex-hours.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Healthcare &amp; Shift Workers</h3>
+                    <p class="cs-text">Nurses, EMTs, CNAs, hospital staff, and other healthcare professionals depend on our extended hours to make their irregular schedules work. We're here for your 5 AM pre-shift drop-off and your 11 PM pickup, without judgment.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-subsidy-support.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Military Families Near JBLM</h3>
+                    <p class="cs-text">Active-duty service members stationed at Joint Base Lewis-McChord often face unpredictable schedules and non-standard hours. We accept Military Childcare Aware and understand the unique demands of military family life.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-responsive-care.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Hospitality, Retail &amp; Service Industry</h3>
+                    <p class="cs-text">Restaurant workers, hotel staff, retail employees, and service industry professionals frequently work evenings and weekends. We're open Monday through Friday until midnight to cover most of those shifts with trusted, licensed child care.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-flex-hours.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Transportation &amp; Overnight Professionals</h3>
+                    <p class="cs-text">Truck drivers, transit workers, and delivery professionals often start before dawn or finish long after sunset. Our 5:30 AM opening means your child is cared for before most providers even unlock their doors.</p>
+                </article>
+                <article class="cs-item">
+                    <span class="cs-icon-wrap" aria-hidden="true">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/icon-responsive-care.svg" alt="" width="32" height="32">
+                    </span>
+                    <h3 class="cs-h3">Parents Working Multiple Jobs</h3>
+                    <p class="cs-text">When work doesn't stop at one job, child care shouldn't either. Our flexible hours and subsidy acceptance mean reliable care is accessible even for families managing tight budgets and demanding schedules.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  program-details             -->
+    <!-- ============================================ -->
+    <section id="program-details" class="cs-section">
+        <img class="wavy-top" decoding="async" src="/assets/svgs/wavy-top.svg" alt="" width="1440" height="64">
+        <img class="wavy-bottom" decoding="async" src="/assets/svgs/wavy-bottom.svg" alt="" width="1440" height="64">
+        <img class="cs-bear float" decoding="async" src="/assets/svgs/bear-gray-big.svg" alt="bear" width="450" height="500">    
+        <div class="cs-container sbs-standard reverse animate">
+            <div class="text-content">
+                <span class="cs-topper">What You Can Expect</span>
+                <h2 class="cs-title">Quality Care at Every Hour. Not Just During Business Hours</h2>
+                <p class="cs-text">Extended hours only mean something if the quality of care stays consistent from 5:30 AM to midnight. At Just Like Home, we maintain the same trained staff, structured routines, nutritious meals, and nurturing environment throughout the entire operating day. Children in our care receive age-appropriate learning activities, proper rest time, meals and snacks, and continuous adult supervision, regardless of whether it's 7 AM or 10 PM. Our staff are fully trained, background-checked, and committed to making every child feel safe and valued at every hour we're open.</p>
+            </div>
+            <div class="sbs-image">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 700, height: 583 }) | avif %}" type="image/avif">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 700, height: 583 }) | webp %}" type="image/webp">
+                         <source media='(max-width: 600px)' srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 700, height: 583 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 925, height: 740 }) | avif %}" type="image/avif">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 925, height: 740 }) | webp %}" type="image/webp">
+                         <source media='(min-width: 601px)' srcset="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" type="image/jpeg">
+                         <img src="{% getUrl '/assets/images/gallery/gallery-001.jpg' | resize({ width: 925, height: 740 }) | jpeg %}" alt="Children learning with teacher support during extended daycare hours." width="740" height="940" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    {{cta("Lakewood's Most Flexible Daycare. Open When Others Aren't", "Schedule a tour and find out how our extended hours can work for your family's schedule.", "Schedule a Tour", "/schedule-a-tour/", "Contact Us", "/contact-us/")}}
+
+{% endblock %}
