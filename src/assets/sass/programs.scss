@@ -346,3 +346,38 @@
         }
     }
 }
+
+
+/*-- -------------------------- -->
+<---  preschool-ecap-highlight  -->
+<--- -------------------------- -*/
+#preschool-ecap-highlight {
+    background-color: var(--primary);
+    text-align: center;
+
+    .cs-topper {
+        background-color: var(--secondary);
+        color: var(--primary);
+        margin-bottom: 1rem;
+    }
+
+    .cs-title {
+        color: var(--headingTextColorWhite);
+        max-width: calc(800 / 16 * 1rem);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.25rem;
+    }
+
+    .cs-text {
+        color: var(--bodyTextColorWhite);
+        max-width: calc(680 / 16 * 1rem);
+        margin: 0 auto 1rem;
+    }
+
+    .button-solid {
+        background-color: var(--secondary);
+        color: var(--primary);
+        margin-top: 1rem;
+    }
+}
