@@ -190,11 +190,71 @@ sitemap:
         </div>
     </section>
 
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            "title": "Child Care Teacher & Leadership Jobs",
+            "description": "Join Just Like Home Daycare Center in Lakewood, WA as an Assistant Director, Lead Teacher, or Assistant Teacher. We are hiring compassionate educators to support children in a nurturing, play-based early learning environment.",
+            "employmentType": [
+                "FULL_TIME",
+                "PART_TIME"
+            ],
+            "industry": "Early Childhood Education",
+            "occupationalCategory": "Education, Training, and Library",
+            "jobLocationType": "ONSITE",
+            "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Just Like Home Daycare Center",
+                "sameAs": "{{ client.domain }}",
+                "telephone": "{{ client.phoneForTel }}",
+                "email": "{{ client.email }}",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "{{ client.address.lineOne }}",
+                    "addressLocality": "{{ client.address.city }}",
+                    "addressRegion": "{{ client.address.state }}",
+                    "postalCode": "{{ client.address.zip }}",
+                    "addressCountry": "US"
+                }
+            },
+            "jobLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "{{ client.address.lineOne }}",
+                    "addressLocality": "{{ client.address.city }}",
+                    "addressRegion": "{{ client.address.state }}",
+                    "postalCode": "{{ client.address.zip }}",
+                    "addressCountry": "US"
+                }
+            },
+            "responsibilities": [
+                "Support a safe, nurturing, and developmentally appropriate classroom environment for children.",
+                "Plan and implement age-appropriate, play-based learning experiences and classroom routines.",
+                "Collaborate with families and staff to maintain open communication and child-centered care.",
+                "Follow all Washington licensing and DCYF requirements while promoting quality early childhood education."
+            ],
+            "qualifications": [
+                "Ability to pass a Washington State and FBI background check.",
+                "Current First Aid/CPR/Bloodborne Pathogens certification.",
+                "Food Handler's Card.",
+                "TB test completed prior to employment.",
+                "Initial 30 Hours STARS training and all DCYF-required training."
+            ],
+            "applicationContact": {
+                "@type": "ContactPoint",
+                "contactType": "employment",
+                "telephone": "{{ client.phoneForTel }}",
+                "email": "{{ client.email }}"
+            }
+        }
+    </script>
+
     <!-- jsPDF CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <!-- Careers PDF script -->
     <script src="/assets/js/careers-pdf.js"></script>
-    
 
     <!-- ============================================ -->
     <!--                CTA                     -->
