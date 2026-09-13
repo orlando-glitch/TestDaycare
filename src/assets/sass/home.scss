@@ -24,6 +24,30 @@
         .cs-hero-title {
             margin-top: 1rem;
         }
+        .cs-registration-alert {
+            margin-top: 1.5rem;
+            padding: 1rem 1.25rem;
+            border: 2px solid rgba(28, 28, 28, 0.15);
+            border-radius: 1rem;
+            background-color: var(--secondary);
+            box-shadow: 0 1rem 2rem rgba(28, 28, 28, 0.12);
+
+            .cs-alert-title,
+            .cs-alert-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-alert-title {
+                margin: 0 0 0.5rem;
+                font-size: clamp(1rem, 2vw, 1.125rem);
+                font-weight: 700;
+                line-height: 1.4;
+            }
+
+            .cs-alert-text {
+                margin: 0;
+            }
+        }
     }
     .image-group {
         position: relative;
