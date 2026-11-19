@@ -828,6 +828,61 @@
     }
 }
 
+#home-gallery {
+    .cs-title {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .cs-topper {
+        display: block;
+        text-align: center;
+    }
+
+    .home-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: clamp(0.75rem, 2vw, 1.5rem);
+    }
+
+    .home-gallery-item {
+        margin: 0;
+        overflow: hidden;
+        border-radius: 1rem;
+        background: var(--headingTextColorWhite);
+        box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+
+        picture {
+            display: block;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        figcaption {
+            padding: 0.75rem 1rem;
+            color: var(--headingTextColor);
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    .home-gallery-item-portrait img {
+        object-position: center 15%;
+    }
+
+    @media (max-width: 900px) {
+        .home-gallery-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+}
 
 /*-- -------------------------- -->
 <---      home-benefits       -->
