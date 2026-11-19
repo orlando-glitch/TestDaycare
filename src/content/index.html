@@ -332,6 +332,50 @@ sitemap:
     </section>
 
     <!-- ============================================ -->
+    <!--               home-gallery                 -->
+    <!-- ============================================ -->
+    <section id="home-gallery" class="cs-section">
+        <div class="cs-container animate">
+            <span class="cs-topper">Life at Just Like Home</span>
+            <h2 class="cs-title">A Look at Our Daycare Community</h2>
+            <div class="home-gallery-grid">
+                <figure class="home-gallery-item">
+                    <picture>
+                        <source srcset="{% getUrl '/assets/images/gallery/IMG_8769.jpg' | resize({ width: 640, height: 480 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/gallery/IMG_8769.jpg' | resize({ width: 640, height: 480 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl '/assets/images/gallery/IMG_8769.jpg' | resize({ width: 640, height: 480 }) | jpeg %}" alt="Children gather outdoors among pumpkins during a fall activity." width="640" height="480" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>Fall fun with friends</figcaption>
+                </figure>
+                <figure class="home-gallery-item home-gallery-item-portrait">
+                    <picture>
+                        <source srcset="{% getUrl '/assets/images/gallery/IMG_8806.jpg' | resize({ width: 640 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/gallery/IMG_8806.jpg' | resize({ width: 640 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl '/assets/images/gallery/IMG_8806.jpg' | resize({ width: 640 }) | jpeg %}" alt="A child holds a pumpkin during an outdoor fall activity." width="640" height="480" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>A proud pumpkin picker</figcaption>
+                </figure>
+                <figure class="home-gallery-item">
+                    <picture>
+                        <source srcset="{% getUrl '/assets/images/gallery/IMG_8835.jpg' | resize({ width: 640, height: 480 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/gallery/IMG_8835.jpg' | resize({ width: 640, height: 480 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl '/assets/images/gallery/IMG_8835.jpg' | resize({ width: 640, height: 480 }) | jpeg %}" alt="Daycare teachers celebrate together in colorful costumes." width="640" height="480" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>Our teachers bring the fun</figcaption>
+                </figure>
+                <figure class="home-gallery-item">
+                    <picture>
+                        <source srcset="{% getUrl '/assets/images/gallery/IMG_8911.jpg' | resize({ width: 640, height: 480 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/gallery/IMG_8911.jpg' | resize({ width: 640, height: 480 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl '/assets/images/gallery/IMG_8911.jpg' | resize({ width: 640, height: 480 }) | jpeg %}" alt="Young children stand together outdoors among pumpkins." width="640" height="480" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>Growing and learning together</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
     <!--                home-benefits                -->
     <!-- ============================================ -->
     <section id="home-benefits" class="cs-section">
