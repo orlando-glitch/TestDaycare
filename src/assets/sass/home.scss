@@ -1447,3 +1447,15 @@
 
 
 }
+/*-- -------------------------- -->
+<---       holiday-hours       -->
+<--- -------------------------- -*/
+#holiday-hours {
+    padding: clamp(2rem, 4vw, 3rem) clamp(1rem, 1.5vw, 2rem);
+    text-align: center;
+
+    .cs-container {
+        margin: 0 auto;
+        max-width: 40rem;
+    }
+}
